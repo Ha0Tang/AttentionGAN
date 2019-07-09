@@ -1,5 +1,8 @@
 ![celeba result](./imgs/celeba_results.jpg)
+Comparison with different baselines on CelebA dataset.<br> 
+
 ![bu3dfe result](./imgs/bu3dfe_results.jpg)
+Comparison with different baselines on Bu3dfe dataset.<br> 
 
 # Attention-Guided GANs (AGGAN) for Unsupervised Image-to-Image Translation
 
