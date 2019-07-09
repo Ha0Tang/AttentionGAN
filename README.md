@@ -96,12 +96,29 @@ This source code borrows heavily from [CycleGAN](https://github.com/junyanz/pyto
 Standards and Technology Grant 60NANB17D191 for funding this research. We also acknowledge the gift donation from Cisco, Inc for this research.
 
 ## Related Projects (Image-to-Image Translation)
-### 1. Paired image-to-image translation method.
+### 1. Supervised image-to-image translation methods.
 [Pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)<br> 
+[SelectionGAN](https://github.com/Ha0Tang/SelectionGAN)<br>
+[Pix2pixHD](https://github.com/NVIDIA/pix2pixHD)<br>
+[SPADE](https://github.com/NVlabs/SPADE)<br>
 [BiCycleGAN](https://github.com/junyanz/BicycleGAN)<br> 
 [Encoder-Decoder](https://github.com/phillipi/pix2pix)<br> 
 
-### 2. Paired image-to-image translation method.
+### 2. Unsupervised image-to-image translation methods.
+[CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)<br> 
+[DiscoGAN](https://github.com/SKTBrain/DiscoGAN)<br>
+[DualGAN](https://github.com/duxingren14/DualGAN)<br>
+[DistancGAN](https://github.com/sagiebenaim/DistanceGAN)<br>
+[ComboGAN](https://github.com/AAnoosheh/ComboGAN)<br>
+[StarGAN](https://github.com/yunjey/stargan)<br>
+
+### 3. Label-, mask or attention-guided image translation methods.
+[IcGAN](https://github.com/Guim3/IcGAN)<br>
+[GANimation](https://github.com/albertpumarola/GANimation)<br>
+[Unsupervised-Attention-guided-Image-to-Image-Translation](https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation)<br>
+[InstaGAN](https://github.com/sangwoomo/instagan)<br>
+
+Feel free to send a PR or issue to add papers.
 
 ## Contributions
 If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
