@@ -63,7 +63,7 @@ This command will take the images under the *dataroot/test* directory, run them 
 
 - `train.py`, `test.py`: the entry point for training and testing.
 - `models.py`: defines the architecture of all models for AGGAN
-- `data/`: defines the class for loading images and semantic maps.
+- `datasets.py`: defines the class for loading images and semantic maps.
 
 ## Citation
 If you use this code for your research, please cite our papers.
