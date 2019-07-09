@@ -112,7 +112,7 @@ Standards and Technology Grant 60NANB17D191 for funding this research. We also a
 [ComboGAN](https://github.com/AAnoosheh/ComboGAN)<br>
 [StarGAN](https://github.com/yunjey/stargan)<br>
 
-### 3. Label-, mask or attention-guided image translation methods.
+### 3. Label-, mask- or attention-guided image translation methods.
 [IcGAN](https://github.com/Guim3/IcGAN)<br>
 [GANimation](https://github.com/albertpumarola/GANimation)<br>
 [Unsupervised-Attention-guided-Image-to-Image-Translation](https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation)<br>
