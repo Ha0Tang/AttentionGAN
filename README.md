@@ -40,9 +40,10 @@ First, you will need to build your datasets by setting up the following director
 
 Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGGAN/tree/master/datasets/ar_neutral2anger)
 
-### 2. Train!
+### 2. Training
 ```
-export CUDA_VISIBLE_DEVICES=X; python train.py --dataroot datasets/<dataset_name>/ --save_name <save_name> --cuda
+export CUDA_VISIBLE_DEVICES=X; 
+python train.py --dataroot datasets/<dataset_name>/ --save_name <save_name> --cuda
 ```
 This command will start a training session using the images under the *dataroot/train* directory with the hyperparameters that showed best results according to CycleGAN authors. You are free to change those hyperparameters, see ```./train --help``` for a description of those.
 
@@ -52,15 +53,16 @@ If you don't own a GPU remove the --cuda option, although I advise you to get on
 
 You can also view the training progress as well as live output images by running ```python3 -m visdom``` in another terminal and opening [http://localhost:8097/](http://localhost:8097/) in your favourite web browser.
 
-## Testing
+## 3. Testing
 ```
 python test.py --dataroot datasets/<dataset_name>/ --save_name <save_name> --cuda
 ```
 This command will take the images under the *dataroot/test* directory, run them through the generators and save the output under the *output/A* and *output/B* directories. As with train, some parameters like the weights to load, can be tweaked, see ```./test --help``` for more information.
 
 
-## License
-This project is licensed under the GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
-Code is basically a cleaner and less obscured implementation of [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+This source code borrows heavily from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We acknowledge the National Institute of
+Standards and Technology Grant 60NANB17D191 for funding this research. We also acknowledge the gift donation from Cisco, Inc for this research.
+
+## Contributions
+If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
