@@ -11,7 +11,7 @@ The repository offers the implementation of our paper in PyTorch.
 
 ### [License](https://github.com/Ha0Tang/AGGAN/blob/master/LICENSE)
 
-Copyright (C) 2019 University of Trento, Italy and Texas State University, USA.
+Copyright (C) 2019 University of Trento, Italy.
 
 All rights reserved.
 Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
