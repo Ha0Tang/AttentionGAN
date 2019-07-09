@@ -1,5 +1,10 @@
-# Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation
-Hao Tang, Dan Xu, Nicu Sebe, Yan Yan
+# Attention-Guided GANs (AGGAN) for Unsupervised Image-to-Image Translation
+
+## AGGAN Framework
+![SelectionGAN Framework](./imgs/framework.jpg)
+
+ Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation (IJCNN 2019 Oral)
+by Hao Tang, Dan Xu, Nicu Sebe, Yan Yan
 
 Pytorch implementation of our AGGAN (https://arxiv.org/abs/1903.12296)
 
