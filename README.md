@@ -95,6 +95,9 @@ If you use this code for your research, please cite our papers.
 This source code borrows heavily from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We acknowledge the National Institute of
 Standards and Technology Grant 60NANB17D191 for funding this research. We also acknowledge the gift donation from Cisco, Inc for this research.
 
+## Contributions
+If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
+
 ## Related Projects (Image-to-Image Translation)
 ### 1. Supervised image-to-image translation methods.
 [Pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)<br> 
@@ -119,6 +122,3 @@ Standards and Technology Grant 60NANB17D191 for funding this research. We also a
 [InstaGAN](https://github.com/sangwoomo/instagan)<br>
 
 Feel free to send a PR or issue to add papers.
-
-## Contributions
-If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
