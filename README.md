@@ -86,7 +86,7 @@ If you use this code for your research, please cite our papers.
 @inproceedings{tang2019attention,
   title={Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation},
   author={Tang, Hao and Xu, Dan and Sebe, Nicu and Yan, Yan},
-  booktitle={IJCNN},
+  booktitle={International Joint Conference on Neural Networks (IJCNN)},
   year={2019}
 }
 ```
