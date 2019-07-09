@@ -1,3 +1,5 @@
+![SelectionGAN Framework](./imgs/bu3dfe_results.jpg)
+
 # Attention-Guided GANs (AGGAN) for Unsupervised Image-to-Image Translation
 
 ## AGGAN Framework
@@ -20,10 +22,10 @@ The code is released for academic research use only. For commercial use, please 
 
 
 ## Prerequisites
-Code is intended to work with ```Python 3.6.x```, it hasn't been tested with previous versions
+Code is intended to work with ```Python 3.6.x```, it hasn't been tested with previous versions.
 
 ### [PyTorch 0.3.1 & torchvision](http://pytorch.org/)
-Follow the instructions in [pytorch.org](http://pytorch.org) for your current setup
+Follow the instructions in [pytorch.org](http://pytorch.org) for your current setup.
 
 Note: Make sure that your PyTorch's version is 0.3.1. Later I will update it to 0.4 if I have time.
 
@@ -54,7 +56,7 @@ Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGG
 export CUDA_VISIBLE_DEVICES=X; 
 python train.py --dataroot datasets/<dataset_name>/ --save_name <save_name> --cuda
 ```
-This command will start a training session using the images under the *dataroot/train* directory with the hyperparameters that showed best results according to CycleGAN authors. You are free to change those hyperparameters, see ```./train --help``` for a description of those.
+This command will start a training session using the images under the *dataroot/train* directory with the default hyperparameters. You are free to change those hyperparameters, see ```./train --help``` for a description of those.
 
 Both generators and discriminators weights will be saved under the output directory.
 
