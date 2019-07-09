@@ -39,7 +39,7 @@ To plot loss graphs and draw images in a nice web browser view
 pip3 install visdom
 ```
 
-## Training
+## Training & Testing
 ### 1. Setup the dataset
 First, you will need to build your datasets by setting up the following directory structure:
 
