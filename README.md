@@ -30,13 +30,13 @@ First, you will need to build your datasets by setting up the following director
 
     .
     ├── datasets                   
-    |   ├── <dataset_name>         # i.e. brucewayne2batman
+    |   ├── <dataset_name>         # i.e. ar_neutral2anger
     |   |   ├── train              # Training
-    |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
-    |   |   |   └── B              # Contains domain B images (i.e. Batman)
+    |   |   |   ├── A              # Contains domain A images (i.e. neutral)
+    |   |   |   └── B              # Contains domain B images (i.e. anger)
     |   |   └── test               # Testing
-    |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
-    |   |   |   └── B              # Contains domain B images (i.e. Batman)
+    |   |   |   ├── A              # Contains domain A images (i.e. neutral)
+    |   |   |   └── B              # Contains domain B images (i.e. anger)
 
 Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGGAN/tree/master/datasets/ar_neutral2anger)
 
@@ -53,12 +53,28 @@ If you don't own a GPU remove the --cuda option, although I advise you to get on
 
 You can also view the training progress as well as live output images by running ```python3 -m visdom``` in another terminal and opening [http://localhost:8097/](http://localhost:8097/) in your favourite web browser.
 
-## 3. Testing
+### 3. Testing
 ```
 python test.py --dataroot datasets/<dataset_name>/ --save_name <save_name> --cuda
 ```
 This command will take the images under the *dataroot/test* directory, run them through the generators and save the output under the *output/A* and *output/B* directories. As with train, some parameters like the weights to load, can be tweaked, see ```./test --help``` for more information.
 
+## Code Structure
+
+- `train.py`, `test.py`: the entry point for training and testing.
+- `models.py`: defines the architecture of all models for AGGAN
+- `data/`: defines the class for loading images and semantic maps.
+
+## Citation
+If you use this code for your research, please cite our papers.
+```
+@inproceedings{tang2019attention,
+  title={Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation},
+  author={Tang, Hao and Xu, Dan and Sebe, Nicu and Yan, Yan},
+  booktitle={IJCNN},
+  year={2019}
+}
+```
 
 ## Acknowledgments
 This source code borrows heavily from [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We acknowledge the National Institute of
