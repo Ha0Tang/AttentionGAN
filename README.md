@@ -1,4 +1,5 @@
-![SelectionGAN Framework](./imgs/bu3dfe_results.jpg)
+![celeba result](./imgs/celeba_results.jpg)
+![bu3dfe result](./imgs/bu3dfe_results.jpg)
 
 # Attention-Guided GANs (AGGAN) for Unsupervised Image-to-Image Translation
 
