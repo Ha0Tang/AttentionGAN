@@ -9,7 +9,7 @@ Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image
 In [IJCNN 2019](https://www.ijcnn.org/) (Oral) <br>
 The repository offers the implementation of our paper in PyTorch.
 
-### [License](./LICENSE.md)
+### [License](https://github.com/Ha0Tang/AGGAN/blob/master/LICENSE)
 
 Copyright (C) 2019 University of Trento, Italy and Texas State University, USA.
 
