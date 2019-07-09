@@ -45,15 +45,15 @@ First, you will need to build your datasets by setting up the following director
 
     .
     ├── datasets                   
-    |   ├── <dataset_name>         # i.e., ar_neutral2anger
+    |   ├── <dataset_name>         # i.e., bu3dfe_neutral2happiness
     |   |   ├── train              # Training
     |   |   |   ├── A              # Contains domain A images (i.e., neutral)
-    |   |   |   └── B              # Contains domain B images (i.e., anger)
+    |   |   |   └── B              # Contains domain B images (i.e., happiness)
     |   |   └── test               # Testing
     |   |   |   ├── A              # Contains domain A images (i.e., neutral)
-    |   |   |   └── B              # Contains domain B images (i.e., anger)
+    |   |   |   └── B              # Contains domain B images (i.e., happiness)
 
-Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGGAN/tree/master/datasets/ar_neutral2anger)
+Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGGAN/tree/master/datasets/bu3dfe_neutral2happiness)
 
 ### 2. Training
 ```
