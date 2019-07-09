@@ -3,10 +3,14 @@
 ## AGGAN Framework
 ![SelectionGAN Framework](./imgs/framework.jpg)
 
- Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation (IJCNN 2019 Oral)
-by Hao Tang, Dan Xu, Nicu Sebe, Yan Yan
+[Paper](https://arxiv.org/abs/1903.12296)
 
-Pytorch implementation of our AGGAN (https://arxiv.org/abs/1903.12296)
+Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation.<br>
+[Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>2</sup>, [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>3</sup>.<br> 
+<sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Texas State University, USA
+In [IJCNN 2019](https://www.ijcnn.org/) (Oral) <br>
+The repository offers the implementation of our paper in PyTorch.
+
 
 ## Prerequisites
 Code is intended to work with ```Python 3.6.x```, it hasn't been tested with previous versions
