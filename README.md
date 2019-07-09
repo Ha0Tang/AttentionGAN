@@ -3,11 +3,20 @@
 ## AGGAN Framework
 ![SelectionGAN Framework](./imgs/framework.jpg)
 
-Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. [arXiv Paper](https://arxiv.org/abs/1903.12296)<br>
+Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. [arXiv Paper](https://arxiv.org/abs/1903.12296) <br>
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>2</sup>, [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>3</sup>.<br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Texas State University, USA<br>
 In [IJCNN 2019](https://www.ijcnn.org/) (Oral) <br>
 The repository offers the implementation of our paper in PyTorch.
+
+### [License](./LICENSE.md)
+
+Copyright (C) 2019 University of Trento, Italy and Texas State University, USA.
+
+All rights reserved.
+Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
+
+The code is released for academic research use only. For commercial use, please contact [hao.tang@unitn.it](hao.tang@unitn.it).
 
 
 ## Prerequisites
@@ -63,7 +72,7 @@ This command will take the images under the *dataroot/test* directory, run them 
 
 - `train.py`, `test.py`: the entry point for training and testing.
 - `models.py`: defines the architecture of all models for AGGAN
-- `datasets.py`: defines the class for loading images and semantic maps.
+- `datasets.py`: defines the class for loading images.
 
 ## Citation
 If you use this code for your research, please cite our papers.
