@@ -1,3 +1,8 @@
+[![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://github.com/Ha0Tang/AttentionGAN/blob/master/LICENSE.md)
+![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
+![Packagist](https://img.shields.io/badge/Pytorch-0.4.1-red.svg)
+![Last Commit](https://img.shields.io/github/last-commit/Ha0Tang/AttentionGAN)
+
 ![celeba result](./imgs/celeba_results.jpg)
 Comparison with different baselines on CelebA dataset.<br> 
 
@@ -12,7 +17,7 @@ Comparison with different baselines on Bu3dfe dataset.<br>  -->
 ## Visualization of Attention Mask and Content Mask 
 ![Visualization](./imgs/mask.jpg) <br> 
 
-[Paper](https://arxiv.org/abs/1903.12296) | [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN.html) <br>
+### [Paper](https://arxiv.org/abs/1903.12296) | [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN.html) <br>
 Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. <br>
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>2</sup>, [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>3</sup>.<br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Texas State University, USA<br>
