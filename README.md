@@ -4,6 +4,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/Ha0Tang/AttentionGAN)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/Ha0Tang/AttentionGAN/graphs/commit-activity))
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
 ![celeba result](./imgs/celeba_results.jpg)
 Comparison with different baselines on CelebA dataset.<br> 
