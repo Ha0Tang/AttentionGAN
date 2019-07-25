@@ -12,7 +12,8 @@ Comparison with different baselines on Bu3dfe dataset.<br>
 ## AGGAN Framework
 ![AGGAN Framework](./imgs/framework.jpg) <br> 
 
-Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. [arXiv Paper](https://arxiv.org/abs/1903.12296) <br>
+[Paper](https://arxiv.org/abs/1903.12296) | [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN.html)
+Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. <br>
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>2</sup>, [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>3</sup>.<br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Texas State University, USA<br>
 In [IJCNN 2019](https://www.ijcnn.org/) (Oral) <br>
