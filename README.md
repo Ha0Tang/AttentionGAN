@@ -7,8 +7,7 @@
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Ha0Tang/AttentionGAN/issues/)
 
-![celeba result](./imgs/celeba_results.jpg)
-Comparison with different baselines on CelebA dataset.<br> 
+![celeba result](./imgs/celeba_results.jpg) 
 
 <!-- ![bu3dfe result](./imgs/bu3dfe_results.jpg)
 Comparison with different baselines on Bu3dfe dataset.<br>  -->
