@@ -2,6 +2,7 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
 ![Packagist](https://img.shields.io/badge/Pytorch-0.4.1-red.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/Ha0Tang/AttentionGAN)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
 ![celeba result](./imgs/celeba_results.jpg)
