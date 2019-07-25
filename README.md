@@ -6,11 +6,11 @@ Comparison with different baselines on Bu3dfe dataset.<br>  -->
 
 # Attention-Guided GANs (AGGAN) for Unsupervised Image-to-Image Translation
 
-## Visualization of Attention Mask and Content Mask 
-![Visualization](./imgs/mask.jpg) <br> 
-
 ## AGGAN Framework
 ![AGGAN Framework](./imgs/framework.jpg) <br> 
+
+## Visualization of Attention Mask and Content Mask 
+![Visualization](./imgs/mask.jpg) <br> 
 
 [Paper](https://arxiv.org/abs/1903.12296) | [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN.html) <br>
 Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. <br>
