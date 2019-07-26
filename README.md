@@ -20,7 +20,7 @@ Comparison with different baselines on Bu3dfe dataset.<br>  -->
 ## Visualization of Attention Mask and Content Mask 
 ![Visualization](./imgs/mask.jpg) <br> 
 
-### [Paper](https://arxiv.org/abs/1903.12296) | [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN.html) | Slides](http://disi.unitn.it/~hao.tang/uploads/slides/Attention_IJCNN19.pptx) <br>
+### [Paper](https://arxiv.org/abs/1903.12296) | [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN.html) | [Slides](http://disi.unitn.it/~hao.tang/uploads/slides/Attention_IJCNN19.pptx) <br>
 Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation. <br>
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>2</sup>, [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>3</sup>.<br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Texas State University, USA<br>
