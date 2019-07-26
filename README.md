@@ -40,13 +40,13 @@ The code is released for academic research use only. For commercial use, please 
 ## Prerequisites
 Code is intended to work with ```Python 3.6.x```, it hasn't been tested with previous versions.
 
-### [PyTorch 0.3.1 & torchvision](http://pytorch.org/)
+### [PyTorch 0.3.1 & Torchvision](http://pytorch.org/)
 Follow the instructions in [pytorch.org](http://pytorch.org) for your current setup.
 
 Note: Make sure that your PyTorch's version is 0.3.1. Later I will update it to 0.4 if I have time.
 
 ### [Visdom](https://github.com/facebookresearch/visdom)
-To plot loss graphs and draw images in a nice web browser view
+To plot loss graphs and draw images in a nice web browser view:
 ```
 pip3 install visdom
 ```
