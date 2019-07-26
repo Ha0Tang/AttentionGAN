@@ -22,9 +22,6 @@ parser.add_argument('--output_nc', type=int, default=3, help='number of channels
 parser.add_argument('--size', type=int, default=256, help='size of the data (squared assumed)')
 parser.add_argument('--cuda', action='store_true', help='use GPU computation')
 parser.add_argument('--n_cpu', type=int, default=8, help='number of cpu threads to use during batch generation')
-# parser.add_argument('--generator_A2B', type=str, default='%s/%s' % (opt.save_name, 'netG_A2B.pth'), help='A2B generator checkpoint file')
-# parser.add_argument('--generator_B2A', type=str, default='%s/%s' % (opt.save_name, 'netG_B2A.pth'), help='B2A generator checkpoint file')
-
 
 
 opt = parser.parse_args()
@@ -43,8 +40,6 @@ if opt.cuda:
     netG_B2A.cuda()
 
 # Load state dicts
-
-
 netG_A2B.load_state_dict(torch.load('%s/%s' % (opt.save_name, 'netG_A2B.pth')))
 netG_B2A.load_state_dict(torch.load('%s/%s' % (opt.save_name, 'netG_B2A.pth')))
 
@@ -62,9 +57,6 @@ transforms_ = [ transforms.ToTensor(),
                 transforms.Normalize((0.5,0.5,0.5), (0.5,0.5,0.5)) ]
 dataloader = DataLoader(ImageDataset(opt.dataroot, transforms_=transforms_, mode='test'), 
                         batch_size=opt.batchSize, shuffle=False, num_workers=opt.n_cpu)
-###################################
-
-###### Testing######
 
 # Create output dirs if they don't exist
 if not os.path.exists('%s/%s' % (opt.save_name, 'testing')):
@@ -82,9 +74,8 @@ for i, batch in enumerate(dataloader):
     fake_A, mask_A, temp_A = netG_B2A(real_B)
     fake_A_1 = 0.5*fake_A.data[0] + 0.5
     fake_A_2 = 0.5*temp_A.data[0] + 0.5
-    # Save image files
-# '%s/%s' % (opt.save_name, 'testing')
 
+    # Save image files
     save_image(real_A.data.cpu()[0]*0.5+0.5, '%s/%s/%04d_real_A.png' % (opt.save_name, 'testing', i+1))
     save_image(real_B.data.cpu()[0]*0.5+0.5, '%s/%s/%04d_real_B.png' % (opt.save_name, 'testing',i+1))
     save_image(fake_A_1, '%s/%s/%04d_fake_A_1.png' % (opt.save_name, 'testing',i+1))
@@ -97,4 +88,3 @@ for i, batch in enumerate(dataloader):
     sys.stdout.write('\rGenerated images %04d of %04d' % (i+1, len(dataloader)))
 
 sys.stdout.write('\n')
-###################################

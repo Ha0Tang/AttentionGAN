@@ -3,10 +3,6 @@ import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
 
-
-# Generaly G architecutre was bravely taken from this project with minor changes:
-# https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-
 class Generator(nn.Module):
     def __init__(self, input_nc=3, output_nc=4, ngf=64, norm_layer=nn.BatchNorm2d, use_dropout=False, n_blocks=6):
         assert(n_blocks >= 0)
@@ -52,12 +48,12 @@ class Generator(nn.Module):
 
     def forward(self, input):
         output = self.model(input)
-        mask = F.sigmoid(output[:, :1])
-        oimg = output[:, 1:]
-        mask = mask.repeat(1, 3, 1, 1)
-        result = oimg*mask + input*(1-mask)
+        attention_mask = F.sigmoid(output[:, :1])
+        content_mask = output[:, 1:]
+        attention_mask = attention_mask.repeat(1, 3, 1, 1)
+        result = content_mask * attention_mask + input * (1 - attention_mask)
 
-        return result, mask, oimg
+        return result, attention_mask, content_mask
 
 class ResnetBlock(nn.Module):
     def __init__(self, dim, norm_layer, use_dropout):
