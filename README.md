@@ -48,7 +48,7 @@ Note: Make sure that your PyTorch's version is 0.3.1. Later I will update it to 
 ### [Visdom](https://github.com/facebookresearch/visdom)
 To plot loss graphs and draw images in a nice web browser view:
 ```
-pip3 install visdom
+pip install visdom
 ```
 
 ## Training & Testing
@@ -65,7 +65,7 @@ First, you will need to build your datasets by setting up the following director
     |   |   |   ├── A              # Contains domain A images (i.e., neutral)
     |   |   |   └── B              # Contains domain B images (i.e., happiness)
 
-Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGGAN/tree/master/datasets/bu3dfe_neutral2happiness)
+Examples of the dataset is shown in [this folder](https://github.com/Ha0Tang/AGGAN/tree/master/datasets/bu3dfe_neutral2happiness).
 
 ### 2. Training
 ```
@@ -78,18 +78,18 @@ Both generators and discriminators weights will be saved under the output direct
 
 If you don't own a GPU remove the --cuda option, although I advise you to get one!
 
-You can also view the training progress as well as live output images by running ```python3 -m visdom``` in another terminal and opening [http://localhost:8097/](http://localhost:8097/) in your favourite web browser.
+You can also view the training progress as well as live output images by running ```python -m visdom``` in another terminal and opening [http://localhost:8097/](http://localhost:8097/) in your favourite web browser.
 
 ### 3. Testing
 ```
 python test.py --dataroot datasets/<dataset_name>/ --save_name <save_name> --cuda
 ```
-This command will take the images under the *dataroot/test* directory, run them through the generators and save the output under the *output/A* and *output/B* directories. As with train, some parameters like the weights to load, can be tweaked, see ```./test --help``` for more information.
+This command will take the images under the `dataroot/test` directory, run them through the generators and save the output under the `output/A` and `output/B` directories. As with training, some parameters like the weights to load, can be tweaked, see ```./test --help``` for more information.
 
 ## Code Structure
 
 - `train.py`, `test.py`: the entry point for training and testing.
-- `models.py`: defines the architecture of all models for AGGAN
+- `models.py`: defines the architecture of all models for AttentionGAN
 - `datasets.py`: defines the class for loading images.
 - `utils.py`: consists of several helper functions.
 
