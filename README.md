@@ -128,8 +128,8 @@ Standards and Technology Grant 60NANB17D191 for funding this research. We also a
 ### 3. Label-, mask- or attention-guided image translation methods.
 [IcGAN](https://github.com/Guim3/IcGAN)<br>
 [GANimation](https://github.com/albertpumarola/GANimation)<br>
-[Unsupervised-Attention-guided-Image-to-Image-Translation](https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation)<br>
-[InstaGAN](https://github.com/sangwoomo/instagan) or [PyTorch Version](https://github.com/alokwhitewolf/Pytorch-Attention-Guided-CycleGAN)<br>
+[Unsupervised-Attention-guided-Image-to-Image-Translation](https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation) or [PyTorch Version](https://github.com/alokwhitewolf/Pytorch-Attention-Guided-CycleGAN)<br>
+[InstaGAN](https://github.com/sangwoomo/instagan)<br>
 
 ## Contributions
 If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
