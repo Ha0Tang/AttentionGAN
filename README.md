@@ -25,7 +25,7 @@ Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>2</sup>, [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>3</sup>.<br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>University of Oxford, UK, <sup>3</sup>Texas State University, USA<br>
 In [IJCNN 2019](https://www.ijcnn.org/) (Oral) <br>
-The repository offers the implementation of our paper in PyTorch.
+The repository offers the official implementation of our paper in PyTorch.
 
 ### [License](https://github.com/Ha0Tang/AGGAN/blob/master/LICENSE.md)
 
