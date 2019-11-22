@@ -1,190 +1,447 @@
-<img src='imgs/horse2zebra.gif' align="right" width=384>
+[![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://github.com/Ha0Tang/GestureGAN/blob/master/LICENSE.md)
+![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
+![Packagist](https://img.shields.io/badge/Pytorch-0.4.1-red.svg)
+![Last Commit](https://img.shields.io/github/last-commit/Ha0Tang/GestureGAN)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/Ha0Tang/GestureGAN/graphs/commit-activity))
+![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gesturegan-for-hand-gesture-to-gesture/gesture-to-gesture-translation-on-ntu-hand)](https://paperswithcode.com/sota/gesture-to-gesture-translation-on-ntu-hand?p=gesturegan-for-hand-gesture-to-gesture)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gesturegan-for-hand-gesture-to-gesture/gesture-to-gesture-translation-on-senz3d)](https://paperswithcode.com/sota/gesture-to-gesture-translation-on-senz3d?p=gesturegan-for-hand-gesture-to-gesture)
 
-<br><br><br>
+![GestureGAN demo](https://github.com/Ha0Tang/GestureGAN/blob/master/imgs/gesture_results.gif)
+GestureGAN for hand gesture-to-gesture tranlation task. Given an image and some novel hand skeletons, GestureGAN is able
+to generate the same person but with different hand gestures.
 
-# CycleGAN and pix2pix in PyTorch
+![GestureGAN demo](https://github.com/Ha0Tang/GestureGAN/blob/master/imgs/view_results.gif)
+GestureGAN for cross-view image tranlation task. Given an image and some novel semantic maps, GestureGAN is able
+to generate the same scene but with different viewpoints.
 
-We provide PyTorch implementations for both unpaired and paired image-to-image translation.
+# GestureGAN for Controllable Image-to-Image Translation
 
-The code was written by [Jun-Yan Zhu](https://github.com/junyanz) and [Taesung Park](https://github.com/taesung), and supported by [Tongzhou Wang](https://ssnl.github.io/).
+## GestureGAN Framework
+![Framework](./imgs/gesturegan_framework.jpg)
 
-This PyTorch implementation produces results comparable to or better than our original Torch software. If you would like to reproduce the same results as in the papers, check out the original [CycleGAN Torch](https://github.com/junyanz/CycleGAN) and [pix2pix Torch](https://github.com/phillipi/pix2pix) code
+## Comparison with State-of-the-Art Image-to-Image Transaltion Methods
+![Framework Comparison](./imgs/comparison.jpg)
 
-**Note**: The current software works well with PyTorch 0.41+. Check out the older [branch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/tree/pytorch0.3.1) that supports PyTorch 0.1-0.3.
+### [Conference paper](https://arxiv.org/abs/1808.04859) | [Project page (Conference paper)](http://disi.unitn.it/~hao.tang/project/GestureGAN.html) | [Slides](http://disi.unitn.it/~hao.tang/uploads/slides/GestureGAN_MM18.pptx) | [Poster](http://disi.unitn.it/~hao.tang/uploads/posters/GestureGAN_MM18.pdf)
 
-You may find useful information in [training/test tips](docs/tips.md) and [frequently asked questions](docs/qa.md). To implement custom models and datasets, check out our [templates](#custom-model-and-dataset). To help users better understand and adapt our codebase, we provide an [overview](docs/overview.md) of the code structure of this repository.
+GestureGAN for Hand Gesture-to-Gesture Translation in the Wild.<br>
+[Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Wei Wang](https://weiwangtrento.github.io/)<sup>1,2</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>1,3</sup>, [Yan Yan](https://userweb.cs.txstate.edu/~y_y34/)<sup>4</sup> and [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>. <br> 
+<sup>1</sup>University of Trento, Italy, <sup>2</sup>EPFL, Switzerland, <sup>3</sup>University of Oxford, UK, <sup>4</sup>Texas State University, USA.<br>
+In ACM MM 2018 (**Oral** & **Best Paper Candidate**).<br>
+The repository offers the official implementation of our paper in PyTorch.
 
-**CycleGAN: [Project](https://junyanz.github.io/CycleGAN/) |  [Paper](https://arxiv.org/pdf/1703.10593.pdf) |  [Torch](https://github.com/junyanz/CycleGAN)**
-<img src="https://junyanz.github.io/CycleGAN/images/teaser_high_res.jpg" width="800"/>
+### [License](./LICENSE.md)
 
+Copyright (C) 2019 University of Trento, Italy.
 
-**Pix2pix:  [Project](https://phillipi.github.io/pix2pix/) |  [Paper](https://arxiv.org/pdf/1611.07004.pdf) |  [Torch](https://github.com/phillipi/pix2pix)**
+All rights reserved.
+Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
 
-<img src="https://phillipi.github.io/pix2pix/images/teaser_v3.png" width="800px"/>
+The code is released for academic research use only. For commercial use, please contact [hao.tang@unitn.it](hao.tang@unitn.it).
 
+## Installation
 
-**[EdgesCats Demo](https://affinelayer.com/pixsrv/) | [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) | by [Christopher Hesse](https://twitter.com/christophrhesse)**
-
-<img src='imgs/edges2cats.jpg' width="400px"/>
-
-If you use this code for your research, please cite:
-
-Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.<br>
-[Jun-Yan Zhu](https://people.eecs.berkeley.edu/~junyanz/)\*,  [Taesung Park](https://taesung.me/)\*, [Phillip Isola](https://people.eecs.berkeley.edu/~isola/), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros). In ICCV 2017. (* equal contributions) [[Bibtex]](https://junyanz.github.io/CycleGAN/CycleGAN.txt)
-
-
-Image-to-Image Translation with Conditional Adversarial Networks.<br>
-[Phillip Isola](https://people.eecs.berkeley.edu/~isola), [Jun-Yan Zhu](https://people.eecs.berkeley.edu/~junyanz), [Tinghui Zhou](https://people.eecs.berkeley.edu/~tinghuiz), [Alexei A. Efros](https://people.eecs.berkeley.edu/~efros). In CVPR 2017. [[Bibtex]](http://people.csail.mit.edu/junyanz/projects/pix2pix/pix2pix.bib)
-
-## Talks and Course
-pix2pix slides: [keynote](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/pix2pix.key) | [pdf](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/pix2pix.pdf), 
-CycleGAN slides: [pptx](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/CycleGAN.pptx) | [pdf](http://efrosgans.eecs.berkeley.edu/CVPR18_slides/CycleGAN.pdf)
-
-CycleGAN course assignment [code](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/assignments/a4-code.zip) and [handout](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/assignments/a4-handout.pdf) designed by Prof. [Roger Grosse](http://www.cs.toronto.edu/~rgrosse/) for [CSC321](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/) "Intro to Neural Networks and Machine Learning" at University of Toronto. Please contact the instructor if you would like to adopt it in your course.
-
-## Other implementations
-### CycleGAN
-<p><a href="https://github.com/leehomyc/cyclegan-1"> [Tensorflow]</a> (by Harry Yang),
-<a href="https://github.com/architrathore/CycleGAN/">[Tensorflow]</a> (by Archit Rathore),
-<a href="https://github.com/vanhuyz/CycleGAN-TensorFlow">[Tensorflow]</a> (by Van Huy),
-<a href="https://github.com/XHUJOY/CycleGAN-tensorflow">[Tensorflow]</a> (by Xiaowei Hu),
-<a href="https://github.com/LynnHo/CycleGAN-Tensorflow-Simple"> [Tensorflow-simple]</a> (by Zhenliang He),
-<a href="https://github.com/luoxier/CycleGAN_Tensorlayer"> [TensorLayer]</a> (by luoxier),
-<a href="https://github.com/Aixile/chainer-cyclegan">[Chainer]</a> (by Yanghua Jin),
-<a href="https://github.com/yunjey/mnist-svhn-transfer">[Minimal PyTorch]</a> (by yunjey),
-<a href="https://github.com/Ldpe2G/DeepLearningForFun/tree/master/Mxnet-Scala/CycleGAN">[Mxnet]</a> (by Ldpe2G),
-<a href="https://github.com/tjwei/GANotebooks">[lasagne/Keras]</a> (by tjwei),
-<a href="https://github.com/simontomaskarlsson/CycleGAN-Keras">[Keras]</a> (by Simon Karlsson)
-</p>
-</ul>
-
-### pix2pix
-<p><a href="https://github.com/affinelayer/pix2pix-tensorflow"> [Tensorflow]</a> (by Christopher Hesse),
-<a href="https://github.com/Eyyub/tensorflow-pix2pix">[Tensorflow]</a> (by Eyyüb Sariu),
-<a href="https://github.com/datitran/face2face-demo"> [Tensorflow (face2face)]</a> (by Dat Tran),
-<a href="https://github.com/awjuliani/Pix2Pix-Film"> [Tensorflow (film)]</a> (by Arthur Juliani),
-<a href="https://github.com/kaonashi-tyc/zi2zi">[Tensorflow (zi2zi)]</a> (by Yuchen Tian),
-<a href="https://github.com/pfnet-research/chainer-pix2pix">[Chainer]</a> (by mattya),
-<a href="https://github.com/tjwei/GANotebooks">[tf/torch/keras/lasagne]</a> (by tjwei),
-<a href="https://github.com/taey16/pix2pixBEGAN.pytorch">[Pytorch]</a> (by taey16)
-</p>
-</ul>
-
-## Prerequisites
-- Linux or macOS
-- Python 3
-- CPU or NVIDIA GPU + CUDA CuDNN
-
-## Getting Started
-### Installation
-
-- Clone this repo:
+Clone this repo.
 ```bash
-git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
-cd pytorch-CycleGAN-and-pix2pix
+git clone https://github.com/Ha0Tang/GestureGAN
+cd GestureGAN/
 ```
 
-- Install [PyTorch](http://pytorch.org and) 0.4+ and other dependencies (e.g., torchvision, [visdom](https://github.com/facebookresearch/visdom) and [dominate](https://github.com/Knio/dominate)).
-  - For pip users, please type the command `pip install -r requirements.txt`.
-  - For Conda users, we provide a installation script `./scripts/conda_deps.sh`. Alternatively, you can create a new Conda environment using `conda env create -f environment.yml`.
-  - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
+This code requires PyTorch 0.4.1 and python 3.6+. Please install dependencies by
+```bash
+pip install -r requirements.txt (for pip users)
+```
+or 
 
-### CycleGAN train/test
-- Download a CycleGAN dataset (e.g. maps):
 ```bash
-bash ./datasets/download_cyclegan_dataset.sh maps
-```
-- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097.
-- Train a model:
-```bash
-#!./scripts/train_cyclegan.sh
-python train.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
-```
-To see more intermediate results, check out `./checkpoints/maps_cyclegan/web/index.html`.
-- Test the model:
-```bash
-#!./scripts/test_cyclegan.sh
-python test.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
-```
-- The test results will be saved to a html file here: `./results/maps_cyclegan/latest_test/index.html`.
-
-### pix2pix train/test
-- Download a pix2pix dataset (e.g.[facades](http://cmp.felk.cvut.cz/~tylecr1/facade/)):
-```bash
-bash ./datasets/download_pix2pix_dataset.sh facades
-```
-- Train a model:
-```bash
-#!./scripts/train_pix2pix.sh
-python train.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --direction BtoA
-```
-- To view training results and loss plots, run `python -m visdom.server` and click the URL http://localhost:8097. To see more intermediate results, check out  `./checkpoints/facades_pix2pix/web/index.html`.
-
-- Test the model (`bash ./scripts/test_pix2pix.sh`):
-```bash
-#!./scripts/test_pix2pix.sh
-python test.py --dataroot ./datasets/facades --name facades_pix2pix --model pix2pix --direction BtoA
-```
-- The test results will be saved to a html file here: `./results/facades_pix2pix/test_latest/index.html`. You can find more scripts at `scripts` directory.
-- To train and test pix2pix-based colorization models, please add `--model colorization` and `--dataset_mode colorization`. See our training [tips](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/tips.md#notes-on-colorization) for more details.
-
-### Apply a pre-trained model (CycleGAN)
-- You can download a pretrained model (e.g. horse2zebra) with the following script:
-```bash
-bash ./scripts/download_cyclegan_model.sh horse2zebra
-```
-- The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. Check [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/scripts/download_cyclegan_model.sh#L3) for all the available CycleGAN models.
-- To test the model, you also need to download the  horse2zebra dataset:
-```bash
-bash ./datasets/download_cyclegan_dataset.sh horse2zebra
+./scripts/conda_deps.sh (for Conda users)
 ```
 
-- Then generate the results using
+To reproduce the results reported in the paper, you would need two NVIDIA GeForce GTX 1080 Ti GPUs or two NVIDIA TITAN Xp GPUs.
+
+## Dataset Preparation
+
+For hand gesture-to-gesture translation tasks, we use NTU Hand Digit and Creative Senz3D datasets.
+For cross-view image translation task, we use Dayton and CVUSA datasets.
+These datasets must be downloaded beforehand. Please download them on the respective webpages. In addition, we put a few sample images in this [code repo](https://github.com/Ha0Tang/GestureGAN/tree/master/datasets/samples). Please cite their papers if you use the data. 
+
+**Preparing NTU Hand Digit Dataset**. The dataset can be downloaded in this [paper](https://rose.ntu.edu.sg/Publications/Documents/Action%20Recognition/Robust%20Part-Based%20Hand%20Gesture.pdf). After downloading it we adopt [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) to generate hand skeletons and use them as training and testing data in our experiments. Note that we filter out failure cases in hand gesture estimation for training and testing. Please cite their papers if you use this dataset. Train/Test splits for Creative Senz3D dataset can be downloaded from [here](https://github.com/Ha0Tang/GestureGAN/tree/master/datasets/ntu_split). Download images and the crossponding extracted hand skeletons of this dataset:
 ```bash
-python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrained --model test --no_dropout
+bash ./datasets/download_gesturegan_dataset.sh ntu_image_skeleton
 ```
-- The option `--model test` is used for generating results of CycleGAN only for one side. This option will automatically set `--dataset_mode single`, which only loads the images from one set. On the contrary, using `--model cycle_gan` requires loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
-
-- For your own experiments, you might want to specify `--netG`, `--norm`, `--no_dropout` to match the generator architecture of the trained model.
-
-### Apply a pre-trained model (pix2pix)
-Download a pre-trained model with `./scripts/download_pix2pix_model.sh`.
-
-- Check [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/scripts/download_pix2pix_model.sh#L3) for all the available pix2pix models. For example, if you would like to download label2photo model on the Facades dataset,
+Then run the following MATLAB script to generate training and testing data:
 ```bash
-bash ./scripts/download_pix2pix_model.sh facades_label2photo
+cd datasets/
+matlab -nodesktop -nosplash -r "prepare_ntu_data"
 ```
-- Download the pix2pix facades datasets:
+
+**Preparing Creative Senz3D Dataset**. The dataset can be downloaded [here](https://lttm.dei.unipd.it//downloads/gesture/#senz3d). After downloading it we adopt [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) to generate hand skeletons and use them as training data in our experiments. Note that we filter out failure cases in hand gesture estimation for training and testing. Please cite their papers if you use this dataset. Train/Test splits for Creative Senz3D dataset can be downloaded from [here](https://github.com/Ha0Tang/GestureGAN/tree/master/datasets/senz3d_split). Download images and the crossponding extracted hand skeletons of this dataset:
 ```bash
-bash ./datasets/download_pix2pix_dataset.sh facades
+bash ./datasets/download_gesturegan_dataset.sh senz3d_image_skeleton
 ```
-- Then generate the results using
+Then run the following MATLAB script to generate training and testing data:
 ```bash
-python test.py --dataroot ./datasets/facades/ --direction BtoA --model pix2pix --name facades_label2photo_pretrained
+cd datasets/
+matlab -nodesktop -nosplash -r "prepare_senz3d_data"
 ```
-- Note that we specified `--direction BtoA` as Facades dataset's A to B direction is photos to labels.
 
-- If you would like to apply a pre-trained model to a collection of input images (rather than image pairs), please use `--model test` option. See `./scripts/test_single.sh` for how to apply a model to Facade label maps (stored in the directory `facades/testB`).
+**Preparing Dayton Dataset**. The dataset can be downloaded [here](https://github.com/lugiavn/gt-crossview). In particular, you will need to download dayton.zip. 
+Ground Truth semantic maps are not available for this datasets. We adopt [RefineNet](https://github.com/guosheng/refinenet) trained on CityScapes dataset for generating semantic maps and use them as training data in our experiments. Please cite their papers if you use this dataset.
+Train/Test splits for Dayton dataset can be downloaded from [here](https://github.com/Ha0Tang/SelectionGAN/tree/master/datasets/dayton_split).
 
-- See a list of currently available models at `./scripts/download_pix2pix_model.sh`
+**Preparing CVUSA Dataset**. The dataset can be downloaded [here](https://drive.google.com/drive/folders/0BzvmHzyo_zCAX3I4VG1mWnhmcGc), which is from the [page](http://cs.uky.edu/~jacobs/datasets/cvusa/). After unzipping the dataset, prepare the training and testing data as discussed in [SelectionGAN](https://arxiv.org/abs/1904.06807). We also convert semantic maps to the color ones by using this [script](https://github.com/Ha0Tang/SelectionGAN/blob/master/scripts/convert_semantic_map_cvusa.m).
+Since there is no semantic maps for the aerial images on this dataset, we use black images as aerial semantic maps for placehold purposes.
 
-## [Docker](docs/docker.md)
-We provide the pre-built Docker image and Dockerfile that can run this code repo. See [docker](docs/docker.md).
+**Preparing Your Own Datasets**. Each training sample in the dataset will contain {Ix,Iy,Cx,Cy}, where Ix=image x, Iy=image y, Cx=Controllable structure of image x, and Cy=Controllable structure of image y.
+Of course, you can use GestureGAN for your own datasets and tasks, such landmark-guided facial experssion translation and keypoint-guided person image generation.
 
-## [Datasets](docs/datasets.md)
-Download pix2pix/CycleGAN datasets and create your own datasets.
+## Generating Images Using Pretrained Model
 
-## [Training/Test Tips](docs/tips.md)
-Best practice for training and testing your models.
+Once the dataset is ready. The result images can be generated using pretrained models.
 
-## [Frequently Asked Questions](docs/qa.md)
-Before you post a new question, please first look at the above Q & A and existing GitHub issues.
+1. You can download a pretrained model (e.g. ntu_gesturegan_twocycle) with the following script:
 
-## Custom Model and Dataset
-If you plan to implement custom models and dataset for your new applications, we provide a dataset [template](data/template_dataset.py) and a model [template](models/template_model.py) as a starting point.
+```
+bash ./scripts/download_gesturegan_model.sh ntu_gesturegan_twocycle
+```
+The pretrained model is saved at `./checkpoints/[type]_pretrained`. Check [here](https://github.com/Ha0Tang/GestureGAN/blob/master/scripts/download_gesturegan_model.sh) for all the available GestureGAN models.
 
-## [Code structure](docs/overview.md)
-To help users better understand and use our code, we briefly overview the functionality and implementation of each package and each module.
+2. Generate images using the pretrained model.
+```bash
+python test.py --dataroot [path_to_dataset] \
+  --name [type]_pretrained \
+  --model [gesturegan_model] \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm batch \
+  --gpu_ids 0 \
+  --batchSize [BS] \
+  --loadSize [LS] \
+  --fineSize [FS] \
+  --no_flip
+```
+
+`[path_to_dataset]` is the path to the dataset. Dataset can be one of `ntu`, `senz3d`, `dayton_a2g`, `dayton_g2a` and `cvusa`. `[type]_pretrained` is the directory name of the checkpoint file downloaded in Step 1, which should be one of `ntu_gesturegan_twocycle_pretrained`, `senz3d_gesturegan_twocycle_pretrained`, `dayton_a2g_64_gesturegan_onecycle_pretrained`, `dayton_g2a_64_gesturegan_onecycle_pretrained`, `dayton_a2g_gesturegan_onecycle_pretrained`, `dayton_g2a_gesturegan_onecycle_pretrained` and `cvusa_gesturegan_onecycle_pretrained`. 
+`[gesturegan_model]` is the directory name of the model of GestureGAN, which should be one of `gesturegan_twocycle` or `gesturegan_onecycle`.
+If you are running on CPU mode, change `--gpu_ids 0` to `--gpu_ids -1`. For [`BS`, `LS`, `FS`], please see `Training` and `Testing` sections.
+
+Note that testing requires large amount of disk storage space. If you don't have enough space, append `--saveDisk` on the command line.
+    
+3. The outputs images are stored at `./results/[type]_pretrained/` by default. You can view them using the autogenerated HTML file in the directory.
+
+## Training New Models
+
+New models can be trained with the following commands.
+
+1. Prepare dataset. 
+
+2. Train.
+
+For NTU dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=3,4;
+python train.py --dataroot ./datasets/ntu \
+  --name ntu_gesturegan_twocycle \
+  --model gesturegan_twocycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0,1 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip \
+  --lambda_L1 800 \
+  --cyc_L1 0.1 \
+  --lambda_identity 0.01 \
+  --lambda_feat 1000 \
+  --display_id 0 \
+  --niter 10 \
+  --niter_decay 10
+```
+
+For Senz3D dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=5,7;
+python train.py --dataroot ./datasets/senz3d \
+  --name senz3d_gesturegan_twocycle \
+  --model gesturegan_twocycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0,1 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip \
+  --lambda_L1 800 \
+  --cyc_L1 0.1 \
+  --lambda_identity 0.01 \
+  --lambda_feat 1000 \
+  --display_id 0 \
+  --niter 10 \
+  --niter_decay 10
+```
+
+For CVUSA dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=0;
+python train.py --dataroot ./dataset/cvusa \
+  --name cvusa_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip \
+  --cyc_L1 0.1 \
+  --lambda_identity 100 \
+  --lambda_feat 100 \
+  --display_id 0 \
+  --niter 15 \
+  --niter_decay 15
+```
+
+For Dayton (a2g direction, 256) dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=0;
+python train.py --dataroot ./datasets/dayton_a2g \
+  --name dayton_a2g_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip \
+  --cyc_L1 0.1 \
+  --lambda_identity 100 \
+  --lambda_feat 100 \
+  --display_id 0 \
+  --niter 20 \
+  --niter_decay 15
+```
+
+For Dayton (g2a direction, 256) dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=1;
+python train.py --dataroot ./datasets/dayton_g2a \
+  --name dayton_g2a_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip \
+  --cyc_L1 0.1 \
+  --lambda_identity 100 \
+  --lambda_feat 100 \
+  --display_id 0 \
+  --niter 20 \
+  --niter_decay 15
+```
+
+For Dayton (a2g direction, 64) dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=0;
+python train.py --dataroot ./datasets/dayton_a2g \
+  --name dayton_a2g_64_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 16 \
+  --loadSize 72 \
+  --fineSize 64 \
+  --no_flip \
+  --cyc_L1 0.1 \
+  --lambda_identity 100 \
+  --lambda_feat 100 \
+  --display_id 0 \
+  --niter 50 \
+  --niter_decay 50
+```
+
+For Dayton (g2a direction, 64) dataset:
+```bash
+export CUDA_VISIBLE_DEVICES=1;
+python train.py --dataroot ./datasets/dayton_g2a \
+  --name dayton_g2a_64_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 16 \
+  --loadSize 72 \
+  --fineSize 64 \
+  --no_flip \
+  --cyc_L1 0.1 \
+  --lambda_identity 100 \
+  --lambda_feat 100 \
+  --display_id 0 \
+  --niter 50 \
+  --niter_decay 50
+```
+
+There are many options you can specify. Please use `python train.py --help`. The specified options are printed to the console. To specify the number of GPUs to utilize, use `export CUDA_VISIBLE_DEVICES=[GPU_ID]`. Note that train `gesturegan_onecycle` only needs one GPU, while train `gesturegan_twocycle` needs two GPUs.
+
+To view training results and loss plots on local computers, set `--display_id` to a non-zero value and run `python -m visdom.server` on a new terminal and click the URL [http://localhost:8097](http://localhost:8097/).
+On a remote server, replace `localhost` with your server's name, such as [http://server.trento.cs.edu:8097](http://server.trento.cs.edu:8097).
+
+### Can I continue/resume my training? 
+To fine-tune a pre-trained model, or resume the previous training, use the `--continue_train --which_epoch <int> --epoch_count<int+1>` flag. The program will then load the model based on epoch `<int>` you set in `--which_epoch <int>`. Set `--epoch_count <int+1>` to specify a different starting epoch count.
+
+
+## Testing
+
+Testing is similar to testing pretrained models.
+
+For NTU dataset:
+```bash
+python test.py --dataroot ./datasets/ntu \
+  --name ntu_gesturegan_twocycle \
+  --model gesturegan_twocycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip
+```
+
+For Senz3D dataset:
+```bash
+python test.py --dataroot ./datasets/senz3d \
+  --name senz3d_gesturegan_twocycle \
+  --model gesturegan_twocycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip
+```
+
+For CVUSA dataset:
+```bash
+python test.py --dataroot ./datasets/cvusa \
+  --name cvusa_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip
+```
+
+For Dayton (a2g direction, 256) dataset:
+```bash
+python test.py --dataroot ./datasets/dayton_a2g \
+  --name dayton_a2g_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip
+```
+
+For Dayton (g2a direction, 256) dataset:
+```bash
+python test.py --dataroot ./datasets/dayton_g2a \
+  --name dayton_g2a_gesturegan_onecycle \
+  --model gesturegan_onecycle \ 
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --loadSize 286 \
+  --fineSize 256 \
+  --no_flip
+```
+
+For Dayton (a2g direction, 64) dataset:
+```bash
+python test.py --dataroot ./datasets/dayton_a2g \
+  --name dayton_g2a_64_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 16 \
+  --loadSize 72 \
+  --fineSize 64 \
+  --no_flip
+```
+
+For Dayton (g2a direction, 64) dataset:
+```bash
+python test.py --dataroot ./datasets/dayton_g2a \
+  --name dayton_g2a_64_gesturegan_onecycle \
+  --model gesturegan_onecycle \
+  --which_model_netG resnet_9blocks \
+  --which_direction AtoB \
+  --dataset_mode aligned \
+  --norm instance \
+  --gpu_ids 0 \
+  --batchSize 16 \
+  --loadSize 72 \
+  --fineSize 64 \
+  --no_flip
+```
+
+Use `--how_many` to specify the maximum number of images to generate. By default, it loads the latest checkpoint. It can be changed using `--which_epoch`.
+
+## Code Structure
+
+- `train.py`, `test.py`: the entry point for training and testing.
+- `models/gesturegan_onecycle_model.py`, `models/gesturegan_twocycle_model.py`: creates the networks, and compute the losses.
+- `models/networks/`: defines the architecture of all models for GestureGAN.
+- `options/`: creates option lists using `argparse` package.
+- `data/`: defines the class for loading images and controllable structures.
+- `scripts/evaluation`: several evaluation codes.
+
+## Evaluation Code
+
+We use several metrics to evaluate the quality of the generated images:
 
 ## Ecaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
@@ -194,30 +451,44 @@ To help users better understand and use our code, we briefly overview the functi
 ## Citation
 If you use this code for your research, please cite our papers.
 ```
-@inproceedings{CycleGAN2017,
-  title={Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networkss},
-  author={Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A},
-  booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
-  year={2017}
-}
-
-
-@inproceedings{isola2017image,
-  title={Image-to-Image Translation with Conditional Adversarial Networks},
-  author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A},
-  booktitle={Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on},
-  year={2017}
+@inproceedings{tang2018gesturegan,
+  title={GestureGAN for Hand Gesture-to-Gesture Translation in the Wild},
+  author={Tang, Hao and Wang, Wei and Xu, Dan and Yan, Yan and Sebe, Nicu},
+  booktitle={ACM MM},
+  year={2018}
 }
 ```
 
-
-
-## Related Projects
-**[CycleGAN-Torch](https://github.com/junyanz/CycleGAN) |
-[pix2pix-Torch](https://github.com/phillipi/pix2pix) | [pix2pixHD](https://github.com/NVIDIA/pix2pixHD) |
-[iGAN](https://github.com/junyanz/iGAN) |
-[BicycleGAN](https://github.com/junyanz/BicycleGAN) | [vid2vid](https://tcwang0509.github.io/vid2vid/)**
-
-
 ## Acknowledgments
-Our code is inspired by [pytorch-DCGAN](https://github.com/pytorch/examples/tree/master/dcgan).
+This source code is inspired by [Pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We want to thank the NVIDIA Corporation for the donation of the TITAN Xp GPUs used in this work.
+
+## Related Projects (Controllable Image-to-Image Translation)
+
+### Keypoint/Skeleton Guided Person/Gesture Image Generation
+Person
+- [Dense Intrinsic Appearance Flow for Human Pose Transfer (CVPR 2019, PyTorch)](https://github.com/ly015/intrinsic_flow)
+- [Progressive Pose Attention for Person Image Generation (CVPR 2019, PyTorch)](https://github.com/tengteng95/Pose-Transfer)
+- [Unsupervised Person Image Generation with Semantic Parsing Transformation (CVPR 2019, PyTorch)](https://github.com/SijieSong/person_generation_spt)
+- [Pose-Normalized Image Generation for Person Re-identification (ECCV 2018, PyTorch)](https://github.com/naiq/PN_GAN)
+- [Everybody Dance Now (ECCVW 2018, PyTorch)](https://github.com/nyoki-mtl/pytorch-EverybodyDanceNow)
+- [FD-GAN: Pose-guided Feature Distilling GAN for Robust Person Re-identification (NIPS 2018, PyTorch)](https://github.com/yxgeee/FD-GAN)
+- [Disentangled Person Image Generation (CVPR 2018, Tensorflow)](https://github.com/charliememory/Disentangled-Person-Image-Generation)
+- [Deformable GANs for Pose-Based Human Image Generation (CVPR 2018, Tensorflow)](https://github.com/AliaksandrSiarohin/pose-gan)
+- [Pose Guided Person Image Generation (NIPS 2017, Tensorflow)](https://github.com/charliememory/Pose-Guided-Person-Image-Generation)
+
+Gesture
+- [Gesture-to-Gesture Translation in the Wild via Category-Independent Conditional Maps (ACM MM 2019, PyTorch)](https://github.com/yhlleo/TriangleGAN)
+
+### Label/Landmark Guided Facial Image Generation
+- [Few-Shot Adversarial Learning of Realistic Neural Talking Head Models (PyTorch)](https://github.com/grey-eye/talking-heads)
+- [GANimation: Anatomically-aware Facial Animation from a Single Image (ECCV 2018, PyTorch)](https://github.com/albertpumarola/GANimation)
+- [StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation (CVPR 2018, PyTorch)](https://github.com/yunjey/stargan)
+
+### Semantic Map Guided Cross-View Image Translation
+- [Multi-Channel Attention Selection GAN with Cascaded Semantic Guidance for Cross-View Image Translation (CVPR 2019, PyTorch)](https://github.com/Ha0Tang/SelectionGAN)
+- [Cross-View Image Synthesis using Conditional GANs (CVPR 2018, Torch)](https://github.com/kregmi/cross-view-image-synthesis)
+- [Predicting Ground-Level Scene Layout from Aerial Imagery (CVPR 2017, Tensorflow)](https://github.com/viibridges/crossnet)
+
+## Contributions
+If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
+
