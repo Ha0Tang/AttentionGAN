@@ -21,7 +21,7 @@
 ## AttentionGAN-v2 Framework
 ![Framework](./imgs/attentiongan_framework.jpg)
 
-Code is coming soon. For AttentionGAN-v1, please refer to [this folder](./AttentionGAN-v1)
+Code is coming soon. For AttentionGAN-v1, please refer to [this folder](./AttentionGAN-v1).
 
 ### [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN-v2.html) | [Paper](https://arxiv.org/abs/1808)
 
