@@ -6,7 +6,7 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
-# Attention Mask Visualizarion 
+# Visualizarion of Learned Attention Masks  
 ## Horse to Zebra Translation
 ![Framework](./imgs/h2z_attention_maps.jpg)
 
