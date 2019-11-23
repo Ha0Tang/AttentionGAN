@@ -18,11 +18,12 @@
 
 # AttentionGAN-v2 for Unpaird Image-to-Image Translation
 
-Code is coming soon.
-
-<!-- ## AttentionGAN Framework
+## AttentionGAN Framework
 ![Framework](./imgs/attentiongan_framework.jpg)
 
+Code is coming soon.
+
+<!-- 
 ### [Conference paper](https://arxiv.org/abs/1808.04859) | [Project page (Conference paper)](http://disi.unitn.it/~hao.tang/project/GestureGAN.html) | [Slides](http://disi.unitn.it/~hao.tang/uploads/slides/GestureGAN_MM18.pptx) | [Poster](http://disi.unitn.it/~hao.tang/uploads/posters/GestureGAN_MM18.pdf)
 
 GestureGAN for Hand Gesture-to-Gesture Translation in the Wild.<br>
