@@ -6,15 +6,22 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
+
+## Attention Mask Visualizarion on Horse to Zebra Translation
+![Framework](./imgs/h2z_attention_maps.jpg)
+
+## Attention Mask Visualizarion on Apple to Orange Translation
+![Framework](./imgs/a2o_attention_maps.jpg)
+
+## Attention Mask Visualizarion on Map to Aerial Photo Translation
+![Framework](./imgs/l2m_attention_maps.jpg)
+
 # AttentionGAN for Unpaird Image-to-Image Translation
 
-v2 is coming soon.
+Code is coming soon.
 
 <!-- ## AttentionGAN Framework
-![Framework](./imgs/gesturegan_framework.jpg)
-
-## Comparison with State-of-the-Art Image-to-Image Transaltion Methods
-![Framework Comparison](./imgs/comparison.jpg)
+![Framework](./imgs/attentiongan_framework.jpg)
 
 ### [Conference paper](https://arxiv.org/abs/1808.04859) | [Project page (Conference paper)](http://disi.unitn.it/~hao.tang/project/GestureGAN.html) | [Slides](http://disi.unitn.it/~hao.tang/uploads/slides/GestureGAN_MM18.pptx) | [Poster](http://disi.unitn.it/~hao.tang/uploads/posters/GestureGAN_MM18.pdf)
 
@@ -219,8 +226,8 @@ If you use this code for your research, please cite our papers.
 ## Acknowledgments
 This source code is inspired by [Pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We want to thank the NVIDIA Corporation for the donation of the TITAN Xp GPUs used in this work.
 
-## Related Projects (Unpaired Image-to-Image Translation)
+## Related Projects (Unpaired Image-to-Image Translation) -->
 
 ## Contributions
-If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)). -->
+If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
 
