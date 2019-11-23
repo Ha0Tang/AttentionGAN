@@ -6,14 +6,14 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
-## Attention Mask Visualizarion 
-### Horse to Zebra Translation
+# Attention Mask Visualizarion 
+## Horse to Zebra Translation
 ![Framework](./imgs/h2z_attention_maps.jpg)
 
-### Apple to Orange Translation
+## Apple to Orange Translation
 ![Framework](./imgs/a2o_attention_maps.jpg)
 
-### Map to Aerial Photo Translation
+## Map to Aerial Photo Translation
 ![Framework](./imgs/l2m_attention_maps.jpg)
 
 # AttentionGAN-v2 for Unpaird Image-to-Image Translation
