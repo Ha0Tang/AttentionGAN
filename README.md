@@ -21,14 +21,14 @@
 ## AttentionGAN-v2 Framework
 ![Framework](./imgs/attentiongan_framework.jpg)
 
-Code is coming soon. For AttentionGAN-v1, please refer to [this folder](./AttentionGAN-v1).
-
 ### [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN-v2.html) | [Paper](https://arxiv.org/abs/1808)
 
 AttentionGAN: Unpaired Image-to-Image Translation usingAttention-Guided Generative Adversarial Networks.<br>
 [Hao Tang](http://disi.unitn.it/~hao.tang/)<sup>1</sup>, [Hong Liu](https://scholar.google.com/citations?user=4CQKG8oAAAAJ&hl=en)<sup>2</sup>, [Dan Xu](http://www.robots.ox.ac.uk/~danxu/)<sup>3</sup>, [Philip H.S. Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en)<sup>3</sup> and [Nicu Sebe](http://disi.unitn.it/~sebe/)<sup>1</sup>. <br> 
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>Peking University, China, <sup>3</sup>University of Oxford, UK.<br>
 The repository offers the official implementation of our paper in PyTorch.
+
+Code is coming soon. For AttentionGAN-v1, please refer to [this folder](./AttentionGAN-v1).
 
 ### [License](./LICENSE.md)
 
