@@ -6,20 +6,20 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
-# Visualizarion of Learned Attention Masks  
-## Horse to Zebra Translation
-![Framework](./imgs/h2z_attention_maps.jpg)
-
-## Apple to Orange Translation
-![Framework](./imgs/a2o_attention_maps.jpg)
-
-## Map to Aerial Photo Translation
-![Framework](./imgs/l2m_attention_maps.jpg)
-
 # AttentionGAN-v2 for Unpaird Image-to-Image Translation
 
 ## AttentionGAN-v2 Framework
 ![Framework](./imgs/attentiongan_framework.jpg)
+
+## Visualizarion of Learned Attention Masks  
+### Horse to Zebra Translation
+![Framework](./imgs/h2z_attention_maps.jpg)
+
+### Apple to Orange Translation
+![Framework](./imgs/a2o_attention_maps.jpg)
+
+### Map to Aerial Photo Translation
+![Framework](./imgs/l2m_attention_maps.jpg)
 
 ### [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN-v2.html) | [Paper](https://arxiv.org/abs/1808)
 
