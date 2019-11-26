@@ -91,19 +91,6 @@ New models can be trained with the following commands.
 
 ## Testing
 
-## Code Structure
-
-- `train.py`, `test.py`: the entry point for training and testing.
-- `models/gesturegan_onecycle_model.py`, `models/gesturegan_twocycle_model.py`: creates the networks, and compute the losses.
-- `models/networks/`: defines the architecture of all models for GestureGAN.
-- `options/`: creates option lists using `argparse` package.
-- `data/`: defines the class for loading images and controllable structures.
-- `scripts/evaluation`: several evaluation codes.
-
-## Evaluation Code
-
-We use several metrics to evaluate the quality of the generated images:
-
 ## Ecaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
 - [KID](https://github.com/taki0112/GAN_Metrics-Tensorflow): Suggested by [UGATIT](https://github.com/taki0112/UGATIT/issues/64). 
