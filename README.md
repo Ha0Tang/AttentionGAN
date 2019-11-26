@@ -23,6 +23,9 @@ The proposed generator learns both foreground and background attentions. It uses
 ### Map to Aerial Photo Translation
 ![Framework](./imgs/l2m_attention_maps.jpg)
 
+### Aerial Photo to Map Translation
+![Framework](./imgs/m2l_attention_maps.jpg)
+
 ### [Project page](http://disi.unitn.it/~hao.tang/project/AttentionGAN-v2.html) | [Paper](https://arxiv.org/abs/1808)
 
 AttentionGAN: Unpaired Image-to-Image Translation using Attention-Guided Generative Adversarial Networks.<br>
