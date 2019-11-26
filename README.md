@@ -6,7 +6,7 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
-# AttentionGAN-v2 for Unpaird Image-to-Image Translation
+# AttentionGAN-v2 for Unpaired Image-to-Image Translation
 
 ## AttentionGAN-v2 Framework
 The proposed generator learns both foreground and background attentions. It uses the foreground attention to select from the generated output for the foreground regions, while uses the background attention to maintain the background information from the input image. For refer to our papers for more details.
