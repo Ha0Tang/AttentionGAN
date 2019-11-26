@@ -13,7 +13,22 @@ The proposed generator learns both foreground and background attentions. It uses
 
 ![Framework](./imgs/attentiongan_framework.jpg)
 
-## Visualizarion of Learned Attention Masks  
+## Comparsion with State-of-the-Art Methods
+### Horse to Zebra Translation
+![Framework](./imgs/h2z_comparsion1.jpg)
+![Framework](./imgs/h2z_comparsion2.jpg)
+![Framework](./imgs/h2z_comparsion3.jpg)
+
+### Apple to Orange Translation
+![Framework](./imgs/a2o_comparsion.jpg)
+
+### Map to Aerial Photo Translation
+![Framework](./imgs/m2l_comparison.jpg)
+
+### Aerial Photo to Map Translation
+![Framework](./imgs/l2m_comparison.jpg)
+
+## Visualization of Learned Attention Masks  
 ### Horse to Zebra Translation
 ![Framework](./imgs/h2z_attention_maps.jpg)
 
