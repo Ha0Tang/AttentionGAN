@@ -9,6 +9,8 @@
 # AttentionGAN-v2 for Unpaird Image-to-Image Translation
 
 ## AttentionGAN-v2 Framework
+The proposed generator learns both foreground and background attentions. It uses the foreground attention to select from the generated output for the foreground regions, while uses the background attention to maintain the background information from the input image. For refer to our papers for more details.
+
 ![Framework](./imgs/attentiongan_framework.jpg)
 
 ## Visualizarion of Learned Attention Masks  
