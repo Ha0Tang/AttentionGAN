@@ -15,7 +15,6 @@ The proposed generator learns both foreground and background attentions. It uses
 
 ## Comparsion with State-of-the-Art Methods
 ### Horse to Zebra Translation
-![Framework](./imgs/h2z_comparsion1.jpg)
 ![Framework](./imgs/h2z_comparsion2.jpg)
 ![Framework](./imgs/h2z_comparsion3.jpg)
 
