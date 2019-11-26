@@ -48,7 +48,7 @@ AttentionGAN: Unpaired Image-to-Image Translation using Attention-Guided Generat
 <sup>1</sup>University of Trento, Italy, <sup>2</sup>Peking University, China, <sup>3</sup>University of Oxford, UK.<br>
 The repository offers the official implementation of our paper in PyTorch.
 
-Code is coming soon. For AttentionGAN-v1, please refer to [this folder](./AttentionGAN-v1).
+**Code is coming soon**. For AttentionGAN-v1, please refer to [this folder](./AttentionGAN-v1).
 
 ### [License](./LICENSE.md)
 
