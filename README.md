@@ -108,7 +108,7 @@ If you use this code for your research, please cite our papers.
 ``` -->
 
 ## Acknowledgments
-This source code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). 
+This source code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). 
 
 <!-- ## Related Projects (Unpaired Image-to-Image Translation) -->
 
