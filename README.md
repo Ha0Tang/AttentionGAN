@@ -105,6 +105,7 @@ bash ./scripts/test_attentiongan.sh
 ```
 bash ./scripts/download_attentiongan_model.sh horse2zebra
 ```
+- The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. 
 - Then generate the result using
 ```
 python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrained --model test --no_dropout
