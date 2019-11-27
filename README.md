@@ -87,27 +87,30 @@ bash ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
 
 ## AttentionGAN Training/Testing
-- Download a dataset using the previous script.
+- Download a dataset using the previous script (e.g., horse2zebra).
 - To view training results and loss plots, run `python -m visdom.server` and click the URL [http://localhost:8097](http://localhost:8097).
 - Train a model:
 ```
 bash ./scripts/train_attentiongan.sh
 ```
+- To see more intermediate results, check out `./checkpoints/horse2zebra_attentiongan/web/index.html`.
 - Test the model:
 ```
 bash ./scripts/test_attentiongan.sh
 ```
+- The test results will be saved to a html file here: `./results/horse2zebra_attentiongan/latest_test/index.html`.
 
 ## Generating Images Using Pretrained Model
 - You need download a pretrained model (e.g., horse2zebra) with the following script:
 ```
 bash ./scripts/download_attentiongan_model.sh horse2zebra
 ```
+- The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. 
 - Then generate the result using
 ```
 python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrained --model test --no_dropout
 ```
-- The option `--model test` is used for generating results of AttentionGAN only for one side. This option will automatically set `--dataset_mode single`, which only loads the images from one set. On the contrary, using `--model cycle_gan` requires loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
+- The option `--model test` is used for generating results of AttentionGAN only for one side. This option will automatically set `--dataset_mode single`, which only loads the images from one set. On the contrary, using `--model attention_gan` requires loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
 
 - For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
