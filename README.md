@@ -68,7 +68,7 @@ git clone https://github.com/Ha0Tang/AttentionGAN
 cd AttentionGAN/
 ```
 
-This code requires PyTorch 0.4.1+ and python 3.6+. Please install dependencies by
+This code requires PyTorch 0.4.1+ and python 3.6.9+. Please install dependencies by
 ```bash
 pip install -r requirements.txt (for pip users)
 ```
