@@ -93,10 +93,12 @@ bash ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
 bash ./scripts/train_attentiongan.sh
 ```
+- To see more intermediate results, check out `./checkpoints/horse2zebra_attention/web/index.html`.
 - Test the model:
 ```
 bash ./scripts/test_attentiongan.sh
 ```
+- The test results will be saved to a html file here: `./results/horse2zebra_attentiongan/latest_test/index.html`.
 
 ## Generating Images Using Pretrained Model
 - You need download a pretrained model (e.g., horse2zebra) with the following script:
