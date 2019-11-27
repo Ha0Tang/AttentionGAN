@@ -81,17 +81,35 @@ or
 To reproduce the results reported in the paper, you would need an NVIDIA TITAN Xp GPUs.
 
 ## Dataset Preparation
+Download the datasets using the following script. Please cite their paper if you use the data.
+```
+bash ./datasets/download_cyclegan_dataset.sh dataset_name
+```
 
+## AttentionGAN Training/Testing
+- Download a dataset using the previous script.
+- To view training results and loss plots, run `python -m visdom.server` and click the URL [http://localhost:8097](http://localhost:8097).
+- Train a model:
+```
+bash ./scripts/train_attentiongan.sh
+```
+- Test the model:
+```
+bash ./scripts/test_attentiongan.sh
+```
 
 ## Generating Images Using Pretrained Model
+- You need download a pretrained model (e.g., horse2zebra) with the following script:
+```
+bash ./scripts/download_attentiongan_model.sh horse2zebra
+```
+- Then generate the result using
+```
+python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrained --model test --no_dropout
+```
+- The option `--model test` is used for generating results of AttentionGAN only for one side. This option will automatically set `--dataset_mode single`, which only loads the images from one set. On the contrary, using `--model cycle_gan` requires loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
 
-Once the dataset is ready. The result images can be generated using pretrained models.
-
-## Training New Models
-
-New models can be trained with the following commands.
-
-## Testing
+- For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
 ## Ecaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
@@ -111,8 +129,6 @@ If you use this code for your research, please cite our papers.
 
 ## Acknowledgments
 This source code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). 
-
-<!-- ## Related Projects (Unpaired Image-to-Image Translation) -->
 
 ## Contributions
 If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
