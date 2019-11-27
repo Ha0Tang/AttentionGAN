@@ -51,8 +51,6 @@ The repository offers the official implementation of our paper in PyTorch.
 #### Are you looking for AttentionGAN-v1?
 > [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1)
 
-**Code is coming soon**.
-
 ### [License](./LICENSE.md)
 
 Copyright (C) 2019 University of Trento, Italy.
@@ -70,7 +68,7 @@ git clone https://github.com/Ha0Tang/AttentionGAN
 cd AttentionGAN/
 ```
 
-This code requires PyTorch 0.4.1 and python 3.6+. Please install dependencies by
+This code requires PyTorch 0.4.1+ and python 3.6+. Please install dependencies by
 ```bash
 pip install -r requirements.txt (for pip users)
 ```
@@ -80,9 +78,10 @@ or
 ./scripts/conda_deps.sh (for Conda users)
 ```
 
-To reproduce the results reported in the paper, you would need one NVIDIA TITAN Xp GPUs.
+To reproduce the results reported in the paper, you would need an NVIDIA TITAN Xp GPUs.
 
 ## Dataset Preparation
+
 
 ## Generating Images Using Pretrained Model
 
