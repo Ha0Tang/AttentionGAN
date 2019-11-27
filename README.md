@@ -87,7 +87,7 @@ bash ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
 
 ## AttentionGAN Training/Testing
-- Download a dataset using the previous script.
+- Download a dataset using the previous script (e.g., horse2zebra).
 - To view training results and loss plots, run `python -m visdom.server` and click the URL [http://localhost:8097](http://localhost:8097).
 - Train a model:
 ```
