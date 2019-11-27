@@ -93,7 +93,7 @@ bash ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
 bash ./scripts/train_attentiongan.sh
 ```
-- To see more intermediate results, check out `./checkpoints/horse2zebra_attention/web/index.html`.
+- To see more intermediate results, check out `./checkpoints/horse2zebra_attentiongan/web/index.html`.
 - Test the model:
 ```
 bash ./scripts/test_attentiongan.sh
