@@ -114,7 +114,7 @@ The results will be saved at `./results/`. Use `--results_dir {directory_path_to
 
 - For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
-## Ecaluation Code
+## Evaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
 - [KID](https://github.com/taki0112/GAN_Metrics-Tensorflow): Suggested by [UGATIT](https://github.com/taki0112/UGATIT/issues/64). 
   Install Steps: `conda create -n python36 pyhton=3.6 anaconda` and `pip install --ignore-installed --upgrade tensorflow==1.13.1`
