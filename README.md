@@ -51,10 +51,9 @@ The repository offers the official implementation of our paper in PyTorch.
 #### Are you looking for AttentionGAN-v1 for Unpaired Image-to-Image Translation?
 > [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1)
 
-#### Are you looking for AttentionGAN-v1 for Multi-Domain Image-to-Image Translation?
+#### Are you looking for AttentionGAN-v1 for Multi-Domain Image-to-Image Translation such as Facial Expression-to-Expression Translation?
 > [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1-multi)
 
-### Facial Expression-to-Expression Translation
 ![Result](./imgs/RaFD_results.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
