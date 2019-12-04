@@ -36,6 +36,7 @@ $ python main.py --mode train --dataset RaFD --image_size 128 --c_dim 8 \
                  --model_save_dir stargan_rafd/models --result_dir stargan_rafd/results
 ```
 
+To train StarGAN on CelebA:
 
 ```bash
 $ python main.py --mode train --dataset CelebA --image_size 128 --c_dim 5 \
