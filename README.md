@@ -114,21 +114,28 @@ The results will be saved at `./results/`. Use `--results_dir {directory_path_to
 
 - For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
-## Ecaluation Code
+## Evaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
 - [KID](https://github.com/taki0112/GAN_Metrics-Tensorflow): Suggested by [UGATIT](https://github.com/taki0112/UGATIT/issues/64). 
   Install Steps: `conda create -n python36 pyhton=3.6 anaconda` and `pip install --ignore-installed --upgrade tensorflow==1.13.1`
 
-<!-- ## Citation
+## Citation
 If you use this code for your research, please cite our papers.
 ```
-@inproceedings{tang2018gesturegan,
-  title={GestureGAN for Hand Gesture-to-Gesture Translation in the Wild},
-  author={Tang, Hao and Wang, Wei and Xu, Dan and Yan, Yan and Sebe, Nicu},
-  booktitle={ACM MM},
-  year={2018}
+@article{tang2019attentiongan,
+  title={AttentionGAN: Unpaired Image-to-Image Translation using Attention-Guided Generative Adversarial Networks},
+  author={Tang, Hao and Liu, Hong and Xu, Dan and Torr, Philip HS and Sebe, Nicu},
+  journal={arXiv preprint arXiv:1911.11897},
+  year={2019}
 }
-``` -->
+
+@inproceedings{tang2019attention,
+  title={Attention-Guided Generative Adversarial Networks for Unsupervised Image-to-Image Translation},
+  author={Tang, Hao and Xu, Dan and Sebe, Nicu and Yan, Yan},
+  booktitle={International Joint Conference on Neural Networks (IJCNN)},
+  year={2019}
+}
+```
 
 ## Acknowledgments
 This source code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). 
