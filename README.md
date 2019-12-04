@@ -51,6 +51,9 @@ The repository offers the official implementation of our paper in PyTorch.
 #### Are you looking for AttentionGAN-v1?
 > [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1)
 
+#### Are you looking for AttentionGAN-v1 for Multi-Domain Image-to-Image Translation?
+> [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1-multi)
+
 ### [License](./LICENSE.md)
 
 Copyright (C) 2019 University of Trento, Italy.
