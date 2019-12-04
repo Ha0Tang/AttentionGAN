@@ -23,17 +23,10 @@ To download the CelebA dataset:
 $ bash download.sh celeba
 ```
 
-To download the RaFD dataset, you must request access to the dataset from [the Radboud Faces Database website](http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main). Then, you need to create a folder structure as described [here](https://github.com/yunjey/StarGAN/blob/master/jpg/RaFD.md).
+To download the RaFD dataset, you must request access to the dataset from [the Radboud Faces Database website](http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main). Then, you need to create a folder structure as described [here](./jpg/RaFD.md).
 
 ### 3. Training
-To train StarGAN on CelebA, run the training script below. See [here](https://github.com/yunjey/StarGAN/blob/master/jpg/CelebA.md) for a list of selectable attributes in the CelebA dataset. If you change the `selected_attrs` argument, you should also change the `c_dim` argument accordingly.
-
-```bash
-$ python main.py --mode train --dataset CelebA --image_size 128 --c_dim 5 \
-                 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs \
-                 --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results \
-                 --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young
-```
+To train StarGAN on CelebA, run the training script below. See [here](./jpg/CelebA.md) for a list of selectable attributes in the CelebA dataset. If you change the `selected_attrs` argument, you should also change the `c_dim` argument accordingly.
 
 To train StarGAN on RaFD:
 
@@ -44,7 +37,25 @@ $ python main.py --mode train --dataset RaFD --image_size 128 --c_dim 8 \
 ```
 
 
+```bash
+$ python main.py --mode train --dataset CelebA --image_size 128 --c_dim 5 \
+                 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs \
+                 --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results \
+                 --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young
+```
+
+For more training options, please refer to [StarGAN](https://github.com/yunjey/stargan). 
+
 ### 4. Testing
+
+To test StarGAN on RaFD:
+
+```bash
+$ python main.py --mode test --dataset RaFD --image_size 128 \
+                 --c_dim 8 --rafd_image_dir data/RaFD/test \
+                 --sample_dir stargan_rafd/samples --log_dir stargan_rafd/logs \
+                 --model_save_dir stargan_rafd/models --result_dir stargan_rafd/results
+```
 
 To test StarGAN on CelebA:
 
@@ -55,14 +66,6 @@ $ python main.py --mode test --dataset CelebA --image_size 128 --c_dim 5 \
                  --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young
 ```
 
-To test StarGAN on RaFD:
-
-```bash
-$ python main.py --mode test --dataset RaFD --image_size 128 \
-                 --c_dim 8 --rafd_image_dir data/RaFD/test \
-                 --sample_dir stargan_rafd/samples --log_dir stargan_rafd/logs \
-                 --model_save_dir stargan_rafd/models --result_dir stargan_rafd/results
-```
 
 ### 5. Pretrained model
 To download a pretrained model checkpoint, run the script below. The pretrained model checkpoint will be downloaded and saved into `./stargan_celeba_256/models` directory.
