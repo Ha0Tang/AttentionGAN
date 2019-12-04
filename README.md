@@ -44,6 +44,9 @@ The proposed generator learns both foreground and background attentions. It uses
 ### Apple to Orange Translation
 ![Attention](./imgs/a2o_attention_maps.jpg)
 
+### Orange to Apple  Translation
+![Attention](./imgs/o2a_attention_maps.jpg)
+
 ### Map to Aerial Photo Translation
 ![Attention](./imgs/l2m_attention_maps.jpg)
 
