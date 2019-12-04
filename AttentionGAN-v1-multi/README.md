@@ -69,19 +69,18 @@ $ python main.py --mode test --dataset CelebA --image_size 128 --c_dim 5 \
 
 
 ### 5. Pretrained model
-To download a pretrained model checkpoint, run the script below. The pretrained model checkpoint will be downloaded and saved into `./stargan_celeba_256/models` directory.
+To download a pretrained model checkpoint, run the script below. The pretrained model checkpoint will be downloaded and saved into `./rafd_128_pretrained/models` directory.
 
 ```bash
-$ bash download.sh pretrained-celeba-256x256
+$ bash download_pretrained.sh rafd_128
 ```
 
-To translate images using the pretrained model, run the evaluation script below. The translated images will be saved into `./stargan_celeba_256/results` directory.
+To translate images using the pretrained model, run the evaluation script below. The translated images will be saved into `./rafd_128_pretrained/results` directory.
 
 ```bash
-$ python main.py --mode test --dataset CelebA --image_size 256 --c_dim 5 \
-                 --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young \
-                 --model_save_dir='stargan_celeba_256/models' \
-                 --result_dir='stargan_celeba_256/results'
+$ python main.py --mode test --dataset RaFD --image_size 128 --c_dim 8 \
+                 --model_save_dir='rafd_128_pretrained/models' \
+                 --result_dir='rafd_128_pretrained/results'
 ```
 
 ## Citation
