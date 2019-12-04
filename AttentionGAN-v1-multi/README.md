@@ -12,9 +12,9 @@ Order: The learned Attention Mask, The Learned Content Mask, Final Results.
 
 ### 1. Cloning the repository
 ```bash
-$ git clone https://github.com/yunjey/AttentionGAN.git
+$ git clone https://github.com/Ha0Tang/AttentionGAN
 $ cd AttentionGAN/
-$ cd AttentionGAN-v1-multi
+$ cd AttentionGAN-v1-multi/
 ```
 
 ### 2. Downloading the dataset
