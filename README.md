@@ -19,6 +19,9 @@ The proposed generator learns both foreground and background attentions. It uses
 <br>
 ![Result](./imgs/h2z_comparsion3.jpg)
 
+### Zebra to Horse  Translation
+![Result](./imgs/z2h_comparsion.jpg)
+
 ### Apple to Orange Translation
 ![Result](./imgs/a2o_comparsion.jpg)
 
@@ -31,6 +34,9 @@ The proposed generator learns both foreground and background attentions. It uses
 ## Visualization of Learned Attention Masks  
 ### Horse to Zebra Translation
 ![Attention](./imgs/h2z_attention_maps.jpg)
+
+### Zebra to Horse Translation
+![Attention](./imgs/z2h_attention_maps.jpg)
 
 ### Apple to Orange Translation
 ![Attention](./imgs/a2o_attention_maps.jpg)
