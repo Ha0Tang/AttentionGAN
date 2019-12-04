@@ -20,7 +20,7 @@ $ cd AttentionGAN-v1-multi/
 ### 2. Downloading the dataset
 To download the CelebA dataset:
 ```bash
-$ bash download.sh celeba
+$ bash download_dataset.sh celeba
 ```
 
 To download the RaFD dataset, you must request access to the dataset from [the Radboud Faces Database website](http://www.socsci.ru.nl:8180/RaFD2/RaFD?p=main). Then, you need to create a folder structure as described [here](./jpg/RaFD.md).
