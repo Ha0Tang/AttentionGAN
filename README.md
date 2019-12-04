@@ -15,31 +15,31 @@ The proposed generator learns both foreground and background attentions. It uses
 
 ## Comparsion with State-of-the-Art Methods
 ### Horse to Zebra Translation
-![Framework](./imgs/h2z_comparsion2.jpg)
+![Result](./imgs/h2z_comparsion2.jpg)
 <br>
-![Framework](./imgs/h2z_comparsion3.jpg)
+![Result](./imgs/h2z_comparsion3.jpg)
 
 ### Apple to Orange Translation
-![Framework](./imgs/a2o_comparsion.jpg)
+![Result](./imgs/a2o_comparsion.jpg)
 
 ### Map to Aerial Photo Translation
-![Framework](./imgs/m2l_comparison.jpg)
+![Result](./imgs/m2l_comparison.jpg)
 
 ### Aerial Photo to Map Translation
-![Framework](./imgs/l2m_comparison.jpg)
+![Result](./imgs/l2m_comparison.jpg)
 
 ## Visualization of Learned Attention Masks  
 ### Horse to Zebra Translation
-![Framework](./imgs/h2z_attention_maps.jpg)
+![Attention](./imgs/h2z_attention_maps.jpg)
 
 ### Apple to Orange Translation
-![Framework](./imgs/a2o_attention_maps.jpg)
+![Attention](./imgs/a2o_attention_maps.jpg)
 
 ### Map to Aerial Photo Translation
-![Framework](./imgs/l2m_attention_maps.jpg)
+![Attention](./imgs/l2m_attention_maps.jpg)
 
 ### Aerial Photo to Map Translation
-![Framework](./imgs/m2l_attention_maps.jpg)
+![Attention](./imgs/m2l_attention_maps.jpg)
 
 ### [Paper](https://128.84.21.199/abs/1911.11897)
 
@@ -53,6 +53,10 @@ The repository offers the official implementation of our paper in PyTorch.
 
 #### Are you looking for AttentionGAN-v1 for Multi-Domain Image-to-Image Translation?
 > [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1-multi)
+
+### Facial Expression-to-Expression Translation
+![Result](./imgs/RaFD_results.jpg)
+Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
 ### [License](./LICENSE.md)
 

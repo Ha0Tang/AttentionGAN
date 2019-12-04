@@ -1,7 +1,7 @@
 This repository provides a PyTorch implementation of StarGAN + AttentionGAN-v1 for the Multi-Domain Image-to-Image Translation. StarGAN can flexibly translate an input image to any desired target domain using only a single generator and a discriminator. 
 
 <p align="center"><img width="100%" src="jpg/rafd_results.jpg" /></p>
-Order: The learned Attention Mask, The Learned Content Mask, Final Results.
+Order: The Learned Attention Mask, The Learned Content Mask, Final Results.
 
 ## Dependencies
 * [Python 3.5+](https://www.continuum.io/downloads)
