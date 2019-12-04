@@ -112,6 +112,7 @@ bash ./datasets/download_cyclegan_dataset.sh dataset_name
 bash ./scripts/train_attentiongan.sh
 ```
 - To see more intermediate results, check out `./checkpoints/horse2zebra_attentiongan/web/index.html`.
+- How to continue train? Append `--continue_train --epoch_count xxx` on the command line.
 - Test the model:
 ```
 bash ./scripts/test_attentiongan.sh
@@ -126,9 +127,9 @@ bash ./scripts/download_attentiongan_model.sh horse2zebra
 - The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. 
 - Then generate the result using
 ```
-python test.py --dataroot ./datasets/horse2zebra --name horse2zebra_pretrained --model attention_gan --dataset_mode unaligned --norm instance --phase test --no_dropout --load_size 256 --crop_size 256 --batch_size 1 --gpu_ids 0 --num_test 500 --epoch 60
+python test.py --dataroot ./datasets/horse2zebra --name horse2zebra_pretrained --model attention_gan --dataset_mode unaligned --norm instance --phase test --no_dropout --load_size 256 --crop_size 256 --batch_size 1 --gpu_ids 0 --num_test 500 --epoch latest 
 ```
-The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
+The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory. Note that if you do not have enough disk space, append `--saveDisk` on the command line.
 
 - For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
