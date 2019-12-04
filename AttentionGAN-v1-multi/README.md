@@ -2,14 +2,10 @@ This repository provides a PyTorch implementation of StarGAN + AttentionGAN-v1 f
 
 <p align="center"><img width="100%" src="jpg/rafd_results.jpg" /></p>
 
-
 ## Dependencies
 * [Python 3.5+](https://www.continuum.io/downloads)
 * [PyTorch 0.4.0+](http://pytorch.org/)
 * [TensorFlow 1.3+](https://www.tensorflow.org/) (optional for tensorboard)
-
-
-<br/>
 
 ## Usage
 
