@@ -3,6 +3,9 @@ This repository provides a PyTorch implementation of StarGAN + AttentionGAN-v1 f
 <p align="center"><img width="100%" src="jpg/rafd_results.jpg" /></p>
 Order: The Learned Attention Mask, The Learned Content Mask, Final Results.
 
+<p align="center"><img width="100%" src="jpg/celeba_results.jpg" /></p>
+Order: The Learned Attention Mask, The Learned Content Mask, Final Results.
+
 ## Dependencies
 * [Python 3.5+](https://www.continuum.io/downloads)
 * [PyTorch 0.4.0+](http://pytorch.org/)
