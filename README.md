@@ -70,7 +70,7 @@ The repository offers the official implementation of our paper in PyTorch.
 ![Result](./imgs/RaFD_results.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
-##### Facial Expression-to-Expression Translation
+##### Facial Attribute Translation
 ![Result](./imgs/CelebA_results.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
