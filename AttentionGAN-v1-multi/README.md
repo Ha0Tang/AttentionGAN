@@ -76,6 +76,7 @@ To download a pretrained model checkpoint, run the script below. The pretrained 
 
 ```bash
 $ bash download_pretrained.sh rafd_128
+$ bash download_pretrained.sh celeba_128
 ```
 
 To translate images using the pretrained model, run the evaluation script below. The translated images will be saved into `./rafd_128_pretrained/results` directory.
