@@ -34,6 +34,9 @@ The proposed generator learns both foreground and background attentions. It uses
 ### Aerial Photo to Map Translation
 ![Result](./imgs/l2m_comparison.jpg)
 
+### Style Transfer
+![Result](./imgs/style_transfer_results.jpg)
+
 ## Visualization of Learned Attention Masks  
 ### Horse to Zebra Translation
 ![Attention](./imgs/h2z_attention_maps.jpg)
@@ -70,7 +73,7 @@ The repository offers the official implementation of our paper in PyTorch.
 ![Result](./imgs/RaFD_results.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
-##### Facial Attribute Translation
+##### Facial Attribute Transfer
 ![Attention](./imgs/celeba_attention.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
