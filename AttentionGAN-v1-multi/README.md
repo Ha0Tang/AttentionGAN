@@ -3,7 +3,7 @@ This repository provides a PyTorch implementation of StarGAN + AttentionGAN-v1 f
 <p align="center"><img width="100%" src="jpg/rafd_results.jpg" /></p>
 Order: The Learned Attention Mask, The Learned Content Mask, Final Results.
 
-<p align="center"><img width="100%" src="jpg/celeba_results.jpg" /></p>
+<p align="center"><img width="100%" src="jpg/celeba_comparison.jpg" /></p>
 Order: The Learned Attention Mask, The Learned Content Mask, Final Results.
 
 ## Dependencies
