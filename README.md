@@ -71,7 +71,7 @@ The repository offers the official implementation of our paper in PyTorch.
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
 ##### Facial Attribute Translation
-![Result](./imgs/celeba_attention.jpg)
+![Attention](./imgs/celeba_attention.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
 ![Result](./imgs/celeba_results.jpg)
