@@ -67,14 +67,14 @@ The repository offers the official implementation of our paper in PyTorch.
 > [Paper](https://arxiv.org/abs/1903.12296) | [Code](./AttentionGAN-v1-multi)
 
 ##### Facial Expression-to-Expression Translation
-![Result](./imgs/rafd_results.jpg)
+![Result](./imgs/RaFD_results.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
 ##### Facial Attribute Translation
 ![Attention](./imgs/celeba_attention.jpg)
 Order: The Learned Attention Masks, The Learned Content Masks, Final Results
 
-![Result](./imgs/celeba_results.jpg)
+![Result](./imgs/CelebA_results.jpg)
 Order: The Learned Attention Masks, AttentionGAN, StarGAN
 
 ### [License](./LICENSE.md)
