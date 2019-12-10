@@ -1,7 +1,7 @@
 FILE=$1
 
 if [[ $FILE != "apple2orange" && $FILE != "horse2zebra" && $FILE != "maps" ]]; then
-    echo "Available datasets are: apple2orange, horse2zebra, maps"
+    echo "Available datasets are: apple2orange, horse2zebra, maps, cezanne2photo, monet2photo"
     exit 1
 fi
 
