@@ -147,8 +147,7 @@ The results will be saved at `./results/`. Use `--results_dir {directory_path_to
 ## Evaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
 - [KID](https://github.com/taki0112/GAN_Metrics-Tensorflow) or [Here](https://github.com/Ha0Tang/AttentionGAN/tree/master/scripts/GAN_Metrics-Tensorflow): Suggested by [UGATIT](https://github.com/taki0112/UGATIT/issues/64). 
-  Install Steps: `conda create -n python36 pyhton=3.6 anaconda` and `pip install --ignore-installed --upgrade tensorflow==1.13.1`
-  if you encount `AttributeError: module 'scipy.misc' has no attribute 'imread'`, please do `pip install scipy==1.1.0`.
+  Install Steps: `conda create -n python36 pyhton=3.6 anaconda` and `pip install --ignore-installed --upgrade tensorflow==1.13.1`. If you encounter the issue `AttributeError: module 'scipy.misc' has no attribute 'imread'`, please do `pip install scipy==1.1.0`.
 
 ## Citation
 If you use this code for your research, please cite our papers.
