@@ -1,6 +1,6 @@
 FILE=$1
 
-echo "Note: available models are apple2orange, horse2zebra, photo2map, cezanne2photo, monet2photo"
+echo "Note: available models are apple2orange, horse2zebra, photo2map, cezanne2photo, monet2photo, selfie2anime"
 echo "Specified [$FILE]"
 
 URL=http://disi.unitn.it/~hao.tang/uploads/models/AttentionGAN/${FILE}_pretrained.tar.gz
