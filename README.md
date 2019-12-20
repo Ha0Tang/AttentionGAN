@@ -113,13 +113,14 @@ or
 ./scripts/conda_deps.sh (for Conda users)
 ```
 
-To reproduce the results reported in the paper, you would need an NVIDIA TITAN Xp GPUs.
+To reproduce the results reported in the paper, you would need an NVIDIA Tesla V100 with 16G memory.
 
 ## Dataset Preparation
 Download the datasets using the following script. Please cite their paper if you use the data.
 ```
 bash ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
+The selfie2anime dataset can be download [here](https://drive.google.com/file/d/1xOWj1UVgp6NKMT3HbPhBbtq2A4EDkghF/view).
 
 ## AttentionGAN Training/Testing
 - Download a dataset using the previous script (e.g., horse2zebra).
