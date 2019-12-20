@@ -150,6 +150,12 @@ The results will be saved at `./results/`. Use `--results_dir {directory_path_to
 
 - For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
+For Experiments of Selfie to Anime Translation. Usage: replace `attention_gan_model.py` and `networks` with the ones in the `AttentionGAN_geo` folder.
+### Train
+`python train.py --dataroot ./datasets/selfie2anime/ --name selfie2anime_attentiongan --model attention_gan --dataset_mode unaligned --pool_size 50 --no_dropout --norm instance --lambda_A 10 --lambda_B 10 --lambda_identity 0.5 --load_size 286 --crop_size 256 --batch_size 4 --niter 100 --niter_decay 100 --gpu_ids 0 --display_id 0 --display_freq 100 --print_freq 100`
+### Test
+`python test.py --dataroot ./datasets/selfie2anime/ --name selfie2anime_attentiongan --model attention_gan --dataset_mode unaligned --norm instance --phase test --no_dropout --load_size 256 --crop_size 256 --batch_size 1 --gpu_ids 0 --num_test 5000 --epoch latest`
+
 ## Evaluation Code
 - [FID](https://github.com/bioinf-jku/TTUR): Official Implementation
 - [KID](https://github.com/taki0112/GAN_Metrics-Tensorflow) or [Here](https://github.com/Ha0Tang/AttentionGAN/tree/master/scripts/GAN_Metrics-Tensorflow): Suggested by [UGATIT](https://github.com/taki0112/UGATIT/issues/64). 
