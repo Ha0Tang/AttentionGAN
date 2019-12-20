@@ -14,6 +14,9 @@ The proposed generator learns both foreground and background attentions. It uses
 ![Framework](./imgs/attentiongan_framework.jpg)
 
 ## Comparsion with State-of-the-Art Methods
+### Selfie To Anime Translation
+![Result](./imgs/selfie_results.jpg)
+
 ### Horse to Zebra Translation
 ![Result](./imgs/h2z_comparsion2.jpg)
 <br>
@@ -36,9 +39,6 @@ The proposed generator learns both foreground and background attentions. It uses
 
 ### Style Transfer
 ![Result](./imgs/style_transfer_results.jpg)
-
-### Selfie To Anime Translation
-![Result](./imgs/selfie_results.jpg)
 
 ## Visualization of Learned Attention Masks  
 ### Horse to Zebra Translation
