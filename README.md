@@ -41,6 +41,9 @@ The proposed generator learns both foreground and background attentions. It uses
 ![Result](./imgs/style_transfer_results.jpg)
 
 ## Visualization of Learned Attention Masks  
+### Selfie To Anime Translation
+![Result](./imgs/selfie_attention.jpg)
+
 ### Horse to Zebra Translation
 ![Attention](./imgs/h2z_attention_maps.jpg)
 
@@ -58,9 +61,6 @@ The proposed generator learns both foreground and background attentions. It uses
 
 ### Aerial Photo to Map Translation
 ![Attention](./imgs/m2l_attention_maps.jpg)
-
-### Selfie To Anime Translation
-![Result](./imgs/selfie_attention.jpg)
 
 ### [Paper](https://128.84.21.199/abs/1911.11897)
 
