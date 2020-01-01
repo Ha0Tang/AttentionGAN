@@ -152,7 +152,7 @@ The results will be saved at `./results/`. Use `--results_dir {directory_path_to
 - For your own experiments, you might want to specify --netG, --norm, --no_dropout to match the generator architecture of the trained model.
 
 ### Image Translation with Geometric Changes Between Source and Target Domains
-For instance, if you want to run experiments of Selfie to Anime Translation. Usage: replace `attention_gan_model.py` and `networks` with the ones in the `AttentionGAN_geo` folder.
+For instance, if you want to run experiments of Selfie to Anime Translation. Usage: replace `attention_gan_model.py` and `networks` with the ones in the `AttentionGAN-geo` folder.
 
 ### Test the Pretrained Model 
 Download data and pretrained model according above instructions.
