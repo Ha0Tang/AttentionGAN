@@ -1,6 +1,6 @@
 FILE=$1
 
-echo "Note: available models are rafd_128, celeba_128, celeba_256"
+echo "Note: available models are rafd_128, rafd_256, celeba_128, celeba_256"
 echo "Specified [$FILE]"
 
 URL=http://disi.unitn.it/~hao.tang/uploads/models/AttentionGAN/${FILE}_pretrained.tar.gz
