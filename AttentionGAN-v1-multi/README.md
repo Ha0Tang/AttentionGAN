@@ -89,6 +89,11 @@ $ python main.py --mode test --dataset RaFD --image_size 128 --c_dim 8 \
                  --result_dir='rafd_128_pretrained/results'
 ```
 
+The model pretrained by the original StarGAN on RaFD dataset with 256 resolution can by downloaded by using,
+```bash
+$ bash download_pretrained.sh stargan_rafd_256 
+```
+
 ## Citation
 If you use this code for your research, please cite our papers.
 ```
