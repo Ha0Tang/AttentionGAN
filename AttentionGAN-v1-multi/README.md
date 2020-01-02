@@ -93,7 +93,7 @@ The model pretrained by the original StarGAN on RaFD dataset with 256 resolution
 ```bash
 $ bash download_pretrained.sh stargan_rafd_256 
 ```
-Thus use the original [StarGAN](https://github.com/yunjey/stargan) code to generated results.
+Then use the original [StarGAN](https://github.com/yunjey/stargan) code to generated results.
 
 ## Citation
 If you use this code for your research, please cite our papers.
