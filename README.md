@@ -11,7 +11,7 @@
 ## AttentionGAN-v2 Framework
 The proposed generator learns both foreground and background attentions. It uses the foreground attention to select from the generated output for the foreground regions, while uses the background attention to maintain the background information from the input image. For refer to our papers for more details.
 
-![Framework](./imgs/attentiongan_framework.jpg)
+![Framework](./imgs/framework.jpg)
 
 ## Comparsion with State-of-the-Art Methods
 ### Selfie To Anime Translation
