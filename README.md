@@ -116,7 +116,7 @@ or
 To reproduce the results reported in the paper, you would need an NVIDIA Tesla V100 with 16G memory.
 
 ## Dataset Preparation
-Download the datasets using the following script. Please cite their paper if you use the data.
+Download the datasets using the following script. Please cite their paper if you use the data. Try twice if it fails the first time!
 ```
 bash ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
