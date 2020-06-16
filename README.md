@@ -189,7 +189,7 @@ If you use this code for your research, please cite our papers.
 ```
 
 ## Acknowledgments
-This source code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). 
+This source code is inspired by [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), [GestureGAN](https://github.com/Ha0Tang/GestureGAN), and [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). 
 
 ## Contributions
 If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Hao Tang ([hao.tang@unitn.it](hao.tang@unitn.it)).
