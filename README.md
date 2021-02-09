@@ -118,7 +118,7 @@ To reproduce the results reported in the paper, you would need an NVIDIA Tesla V
 ## Dataset Preparation
 Download the datasets using the following script. Please cite their paper if you use the data. Try twice if it fails the first time!
 ```
-bash ./datasets/download_cyclegan_dataset.sh dataset_name
+sh ./datasets/download_cyclegan_dataset.sh dataset_name
 ```
 The selfie2anime dataset can be download [here](https://drive.google.com/file/d/1xOWj1UVgp6NKMT3HbPhBbtq2A4EDkghF/view).
 
@@ -127,20 +127,20 @@ The selfie2anime dataset can be download [here](https://drive.google.com/file/d/
 - To view training results and loss plots, run `python -m visdom.server` and click the URL [http://localhost:8097](http://localhost:8097).
 - Train a model:
 ```
-bash ./scripts/train_attentiongan.sh
+sh ./scripts/train_attentiongan.sh
 ```
 - To see more intermediate results, check out `./checkpoints/horse2zebra_attentiongan/web/index.html`.
 - How to continue train? Append `--continue_train --epoch_count xxx` on the command line.
 - Test the model:
 ```
-bash ./scripts/test_attentiongan.sh
+sh ./scripts/test_attentiongan.sh
 ```
 - The test results will be saved to a html file here: `./results/horse2zebra_attentiongan/latest_test/index.html`.
 
 ## Generating Images Using Pretrained Model
 - You need download a pretrained model (e.g., horse2zebra) with the following script:
 ```
-bash ./scripts/download_attentiongan_model.sh horse2zebra
+sh ./scripts/download_attentiongan_model.sh horse2zebra
 ```
 - The pretrained model is saved at `./checkpoints/{name}_pretrained/latest_net_G.pth`. 
 - Then generate the result using
