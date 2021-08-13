@@ -173,11 +173,11 @@ Download data and pretrained model according above instructions.
 ## Citation
 If you use this code for your research, please cite our papers.
 ```
-@article{tang2019attentiongan,
+@article{tang2021attentiongan,
   title={AttentionGAN: Unpaired Image-to-Image Translation using Attention-Guided Generative Adversarial Networks},
   author={Tang, Hao and Liu, Hong and Xu, Dan and Torr, Philip HS and Sebe, Nicu},
-  journal={arXiv preprint arXiv:1911.11897},
-  year={2019}
+  journal={IEEE Transactions on Neural Networks and Learning Systems (TNNLS)},
+  year={2021} 
 }
 
 @inproceedings{tang2019attention,
